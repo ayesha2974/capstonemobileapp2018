@@ -1,23 +1,19 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Login from './login'
+import ResetPassword from './ResetPassword'
+import ResetPassword2 from './ResetPassword2'
+
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Ayesha up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+      <View>
+       {/* <Login />  */}
+        {/* <ResetPassword/> */}
+        <ResetPassword2/>
       </View>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
