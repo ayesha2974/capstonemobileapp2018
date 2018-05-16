@@ -32,7 +32,7 @@ export default class ResetPassword extends React.Component {
                         <Text style={styles.textStyle}>Enter Your email to reset password</Text>
                         <Item fixedLabel last>
 
-                            <Input style={styles.inputfeilds} placeholder="Email Address" />
+                        <Input style={styles.inputfeilds} placeholder="Email Address" />
                         </Item>
 
                     </View>

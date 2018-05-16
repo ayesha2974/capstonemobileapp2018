@@ -24,14 +24,10 @@ export default class ResetPassword2 extends React.Component {
             <View style={styles.container} >
                 <View style={styles.box} >
                     <Image source={require('./logo.png')} style={styles.pic} />
-
-
-                    <View >
+                   <View >
                         <Text style={styles.textStyle}>Reset Password</Text>
                     </View>
-
                     <View style={styles.inputfeilds}>
-
                         <TextInput underlineColorAndroid= 'transparent' placeholder='New Password' />
                 </View>
                     <View style={styles.inputfeilds2}>
