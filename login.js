@@ -28,14 +28,9 @@ export default class Login extends React.Component {
                     <View style={styles.box} >
                         <Image source={require('./logo.png')} style={styles.pic} />
 
-
-
-
                         <View>
-
                             <Text style={styles.textStyle}>Username.Password</Text>
                             <Item >
-
 
                                 <Input style={styles.inputfeilds} placeholder='Username.Password' />
                             </Item>
@@ -45,7 +40,9 @@ export default class Login extends React.Component {
 
                         {/* <Button rounded style={styles.buttons} >
                         <Text style={styles.buttonsText}>Login</Text>
-                    </Button> */}
+                    </Button> 
+                //comment here 
+                */}
 
                         <TouchableOpacity style={styles.button}>
 
