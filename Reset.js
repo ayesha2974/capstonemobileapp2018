@@ -89,8 +89,8 @@ const styles = StyleSheet.create({
         // marginBottom: "5%",
         // marginLeft: "1%",
         backgroundColor: 'white',
-        borderColor: 'blue',
-        borderWidth: 1,
+        // borderColor: 'blue',
+        // borderWidth: 1,
         fontSize: 20,
     },
 
