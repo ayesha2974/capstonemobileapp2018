@@ -41,7 +41,6 @@ export default class Login extends React.Component {
                         {/* <Button rounded style={styles.buttons} >
                         <Text style={styles.buttonsText}>Login</Text>
                     </Button> 
-                //comment here 
                 */}
 
                         <TouchableOpacity style={styles.button}>
