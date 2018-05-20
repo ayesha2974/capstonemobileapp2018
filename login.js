@@ -57,8 +57,11 @@ export default class Login extends React.Component {
                             style={styles.textStyle1}
                             onPress={() => { Linking.openURL('http://www.example.com/') }}
                         >
-                            Forgot your password ?
+
+                    Change me back please
+
                     </Text>
+
                     </View>
                 </KeyboardAvoidingView>
             </View>
