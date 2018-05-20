@@ -6,16 +6,9 @@ import { Container, Header, Content, Form, Item, Input, Label, Button } from 'na
 
 
 
-export default class Login extends React.Component {
+export default class Rest extends React.Component {
 
 
-
-    // state = {
-    //     username: 'yosra@yosra.com',
-    //     password: 'Password1!',
-
-
-    // }
 
 
     render() {
@@ -33,11 +26,11 @@ export default class Login extends React.Component {
 
                         <View>
 
-                            <Text style={styles.textStyle}>Username.Password</Text>
+                            <Text style={styles.textStyle}>Enter Your email to reset password</Text>
                             <Item >
 
 
-                                <Input style={styles.inputfeilds} placeholder='Username.Password' />
+                            <Input style={styles.inputfeilds} placeholder='Email Address' />
                             </Item>
 
                         </View>
@@ -49,16 +42,11 @@ export default class Login extends React.Component {
 
                         <TouchableOpacity style={styles.button}>
 
-                            <Text style={styles.buttonsText}>Login</Text>
+                            <Text style={styles.buttonsText}>Reset</Text>
 
                         </TouchableOpacity>
 
-                        <Text
-                            style={styles.textStyle1}
-                            onPress={() => { Linking.openURL('http://www.example.com/') }}
-                        >
-                            Forgot  your password?
-                    </Text>
+                    
                     </View>
                 </KeyboardAvoidingView>
             </View>
@@ -133,6 +121,7 @@ const styles = StyleSheet.create({
         width: '20%',
         fontSize: 30,
         borderRadius: 20,
+
 
     },
 
