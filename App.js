@@ -1,17 +1,19 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Login from './login'
-import ResetPassword from './ResetPassword'
-import ResetPassword2 from './ResetPassword2'
-
+import Reset from './Reset'
+import EnterPass from './EnterPass'
+import NavInstructor from './NavInstructor'
 
 export default class App extends React.Component {
   render() {
     return (
       <View>
-       {/* <Login />  */}
-        {/* <ResetPassword/> */}
-        <ResetPassword2/>
+        {/* <Login />  */}
+        {/* <Reset/> */}
+        {/* <EnterPass /> */}
+        <NavInstructor />
+
       </View>
     );
   }
