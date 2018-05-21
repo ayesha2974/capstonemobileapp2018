@@ -1,6 +1,7 @@
 import { AppRegistry, Text, TextInput, View, Alert, StyleSheet, TouchableOpacity, Image, KeyboardAvoidingView, Linking, ScrollView } from 'react-native';
 import React from 'react';
-import Logo from './logo.png'
+import Logo from './logo.png';
+import {LinearGradient} from 'expo'
 
 import { Container, Header, Content, Form, Item, Input, Label, Button } from 'native-base';
 
@@ -22,7 +23,10 @@ export default class Login extends React.Component {
 
         return (
 
-
+            <LinearGradient
+            colors={['#e9e9e9','#76323f']}
+            start={[0,1]}
+            end={[1,0]}>
             <View style={styles.container} >
                 <KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
                     <View style={styles.box} >
@@ -36,12 +40,6 @@ export default class Login extends React.Component {
                             </Item>
 
                         </View>
-
-
-                        {/* <Button rounded style={styles.buttons} >
-                        <Text style={styles.buttonsText}>Login</Text>
-                    </Button> 
-                */}
 
                         <TouchableOpacity style={styles.button}>
 
@@ -61,6 +59,7 @@ export default class Login extends React.Component {
                     </View>
                 </KeyboardAvoidingView>
             </View>
+            </LinearGradient>
 
         );
     }
@@ -69,56 +68,46 @@ export default class Login extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: 'lightgray',
+        backgroundColor: '#e9e9e9',
         width: "100%",
         height: "100%",
         alignItems: 'center',
         justifyContent: 'center',
     },
 
-
-
     pic: {
-        width: "20%",
-        height: "20%",
-        // borderColor: 'blue',
-        // borderWidth: 1,
-        marginBottom: "5%",
-        // justifyContent: 'center',
-        // alignItems: 'center',
-        backgroundColor: "lightgray",
+            width: 170,
+            height: 160,
+            alignItems: 'center',
+            justifyContent: 'center',
     },
 
-    box: {
-        flex: 1,
-        width: "70%",
-        height: "50%",
-        // marginLeft: "18%",
-        marginTop: "5%",
-        backgroundColor: "lightgray",
-        marginBottom: 30,
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderWidth: 1,
-        borderColor: 'lightgray',
-        // marginBottom: "5%"
-        // borderColor: 'red',
-        // borderWidth: 1,
+        box: {
+            flex: 1,
+            width: 500,
+            height: 100,
+            // marginLeft: "18%",
+            marginTop: 10,
+            backgroundColor: '#e9e9e9',
+            marginBottom: 30,
+            justifyContent: 'center',
+            alignItems: 'center',
+            
     },
 
     inputfeilds: {
         flex: 1,
         justifyContent: 'center',
         textAlign: 'left',
-        width: "100%",
+        width: 200,
         // height: "70%",
         borderWidth: 1,
         color: 'black',
-        marginTop: "5%",
+        marginTop: 10,
         // marginBottom: "5%",
         // marginLeft: "1%",
         backgroundColor: 'white',
-        // borderColor: 'yellow',
+        // borderColor: 'blue',
         // borderWidth: 1,
         fontSize: 20,
     },
@@ -128,10 +117,11 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: "#76323f",
         padding: 10,
-        marginTop: "2%",
-        width: '20%',
-        fontSize: 30,
+        marginTop: 20,
+        width: 100,
+        // fontSize: 30,
         borderRadius: 20,
+
 
     },
 
@@ -139,11 +129,11 @@ const styles = StyleSheet.create({
     buttons: {
         marginTop: 20,
         backgroundColor: "#fffaf0",
-        width: "40%",
+        width: 80,
         color: 'white',
         justifyContent: 'center',
         textAlign: 'center',
-        marginLeft: "30%",
+        marginLeft: 60,
         fontWeight: 'bold',
     },
 
@@ -155,13 +145,13 @@ const styles = StyleSheet.create({
 
     },
 
-
     textStyle: {
         textAlign: 'center',
         fontWeight: 'bold',
         fontSize: 25,
         color: '#76323f',
-
+        width:300,
+        marginTop:25,
 
     },
     textStyle1: {
@@ -170,7 +160,8 @@ const styles = StyleSheet.create({
         fontSize: 25,
         color: 'white',
         paddingTop: '5%',
-        color: 'black',
+        color: '#787E84',
+        
 
     },
 
