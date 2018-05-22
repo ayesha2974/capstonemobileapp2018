@@ -25,12 +25,13 @@ export default class Rest extends React.Component {
                         <View>
 
                             <Text style={styles.textStyle}>Enter Your email to reset password</Text>
-                            <Item >
-
-
-                            <Input style={styles.inputfeilds} placeholder='Email Address' />
-                            </Item>
-
+                           
+                            <TextInput placeholder="Email Address"
+                            style={{height: 40, width:350, backgroundColor:'white', borderColor: 'black', borderWidth: 1,paddingLeft:10,marginLeft:25}}
+                            underlineColorAndroid='transparent'
+                           
+                          />    
+                             <Text style={{color:'red',paddingLeft:28}}>Invalid Email</Text>  
                         </View>
 
 
@@ -56,7 +57,7 @@ export default class Rest extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#e9e9e9',
+        backgroundColor: 'white',
         width: "100%",
         height: "100%",
         alignItems: 'center',
@@ -77,9 +78,8 @@ const styles = StyleSheet.create({
         flex: 1,
         width: 500,
         height: 100,
-        // marginLeft: "18%",
         marginTop: 10,
-        backgroundColor: '#e9e9e9',
+        backgroundColor: 'white',
         marginBottom: 30,
         justifyContent: 'center',
         alignItems: 'center',
@@ -102,30 +102,16 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: "#76323f",
         padding: 10,
-        marginTop: 20,
+        marginTop: 30,
         width: 100,
-        // fontSize: 30,
         borderRadius: 20,
 
-    },
-
-
-    buttons: {
-        marginTop: 20,
-        backgroundColor: "#fffaf0",
-        width: 80,
-        color: 'white',
-        justifyContent: 'center',
-        textAlign: 'center',
-        marginLeft: 60,
-        fontWeight: 'bold',
     },
 
     buttonsText: {
 
         color: 'white',
         fontSize: 25,
-
 
     },
 
@@ -137,17 +123,8 @@ const styles = StyleSheet.create({
         color: '#76323f',
         width:400,
         marginTop:25,
+        marginBottom:10,
 
     },
-    textStyle1: {
-        textAlign: 'center',
-        fontWeight: 'bold',
-        fontSize: 25,
-        color: 'white',
-        paddingTop: '5%',
-        color: '#787E84',
-        
-
-    },
-
+   
 });

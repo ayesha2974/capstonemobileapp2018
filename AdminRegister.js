@@ -192,18 +192,6 @@ const styles = StyleSheet.create({
 
 
     },
-
-    // textStyle: {
-    //     textAlign: 'left',
-    //     marginLeft:5,
-    //     fontWeight: 'bold',
-    //     fontSize: 20,
-    //     color: '#76323f',
-    //     width:300,
-    //     marginTop:25,
-    //     marginBottom:10,
-
-    // },
     textStyle: {
         textAlign: 'left',
         marginLeft:3,
@@ -214,16 +202,7 @@ const styles = StyleSheet.create({
         marginTop:25,
 
     },
-    textStyle1: {
-        textAlign: 'center',
-        fontWeight: 'bold',
-        fontSize: 25,
-        color: 'white',
-        paddingTop: '5%',
-        color: '#787E84',
-        
 
-    },
 
 
 });

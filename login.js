@@ -10,15 +10,6 @@ import { Container, Header, Content, Form, Item, Input, Label, Button } from 'na
 export default class Login extends React.Component {
 
 
-
-    // state = {
-    //     username: 'yosra@yosra.com',
-    //     password: 'Password1!',
-
-
-    // }
-
-
     render() {
 
         return (
@@ -87,7 +78,6 @@ const styles = StyleSheet.create({
             flex: 1,
             width: 500,
             height: 100,
-            // marginLeft: "18%",
             marginTop: 10,
             backgroundColor: 'white',
             marginBottom: 30,
@@ -101,15 +91,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         textAlign: 'left',
         width: 200,
-        // height: "70%",
         borderWidth: 1,
         color: 'black',
         marginTop: 10,
-        // marginBottom: "5%",
-        // marginLeft: "1%",
         backgroundColor: 'white',
-        // borderColor: 'blue',
-        // borderWidth: 1,
         fontSize: 20,
     },
 
@@ -120,23 +105,11 @@ const styles = StyleSheet.create({
         padding: 10,
         marginTop: 30,
         width: 100,
-        // fontSize: 30,
+
         borderRadius: 20,
         marginLeft:20,
 
 
-    },
-
-
-    buttons: {
-        marginTop: 20,
-        backgroundColor: "#fffaf0",
-        width: 80,
-        color: 'white',
-        justifyContent: 'center',
-        textAlign: 'center',
-        marginLeft: 70,
-        fontWeight: 'bold',
     },
 
     buttonsText: {

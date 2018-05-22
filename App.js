@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Login from './login'
+import Login from './Login'
 import Reset from './Reset'
 import EnterPass from './EnterPass'
 import NavInstructor from './NavInstructor'
@@ -11,9 +11,9 @@ export default class App extends React.Component {
   render() {
     return (
       <View>
-        {<Login /> }
-        {/* <Reset/> */}
-        {/* <EnterPass /> */}
+        {/* <Login />  */}
+        {/* <Reset/>  */}
+        <EnterPass />
         {/* <NavInstructor /> */}
         {/* <FacultyList/> */}
         {/* <AdminRegister /> */}

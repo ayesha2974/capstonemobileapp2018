@@ -18,12 +18,20 @@ export default class Reset extends React.Component {
                         <Image source={require('./logo.png')} style={styles.pic} />
                         <View>
                             <Text style={styles.textStyle}>Reset Password</Text>
-                            <Item >
-                                <Input style={styles.inputfeilds} placeholder='New Password' />
-                            </Item>
-                            <Item >
-                                <Input style={styles.inputfeilds} placeholder='Confirm New Password' />
-                            </Item>
+                            
+                            <TextInput placeholder="Confirm Password"
+                            style={{height: 40, width:300, backgroundColor:'white', borderColor: 'black', borderWidth: 1,paddingLeft:10,marginLeft:18}}
+                            underlineColorAndroid='transparent'
+                           
+                          />  
+                            <Text style={{color:'red',paddingLeft:22}}>Invalid password</Text>  
+
+                          <TextInput placeholder="Confirm New Password"
+                          style={{height: 40, width:300, backgroundColor:'white', borderColor: 'black', borderWidth: 1,paddingLeft:10,marginLeft:18,marginTop:15}}
+                          underlineColorAndroid='transparent'
+                         
+                        />  
+                          <Text style={{color:'red',paddingLeft:22}}>Invalid password</Text>  
                         </View>
                         <TouchableOpacity style={styles.button}>
 
@@ -40,7 +48,7 @@ export default class Reset extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#e9e9e9',
+        backgroundColor: 'white',
         width: "100%",
         height: "100%",
         alignItems: 'center',
@@ -56,18 +64,15 @@ const styles = StyleSheet.create({
         height: 160,
         alignItems: 'center',
         justifyContent: 'center',
-        // marginBottom: 10,
-        
-       
+   
     },
 
     box: {
         flex: 1,
         width: 500,
         height: 100,
-        // marginLeft: "18%",
         marginTop: 10,
-        backgroundColor: '#e9e9e9',
+        backgroundColor: 'white',
         marginBottom: 30,
         justifyContent: 'center',
         alignItems: 'center',
@@ -79,15 +84,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         textAlign: 'left',
         width: 200,
-        // height: "70%",
         borderWidth: 1,
         color: 'black',
         marginTop: 10,
-        // marginBottom: "5%",
-        // marginLeft: "1%",
         backgroundColor: 'white',
-        // borderColor: 'blue',
-        // borderWidth: 1,
         fontSize: 20,
     },
 
@@ -96,25 +96,12 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: "#76323f",
         padding: 10,
-        marginTop: 20,
+        marginTop: 30,
         width: 100,
-        // fontSize: 30,
         borderRadius: 20,
+        marginLeft:10,
 
     },
-
-
-    buttons: {
-        marginTop: 20,
-        backgroundColor: "#fffaf0",
-        width: 80,
-        color: 'white',
-        justifyContent: 'center',
-        textAlign: 'center',
-        marginLeft: 60,
-        fontWeight: 'bold',
-    },
-
     buttonsText: {
 
         color: 'white',
@@ -131,17 +118,10 @@ const styles = StyleSheet.create({
         color: '#76323f',
         width:300,
         marginTop:25,
+       marginBottom:10,
 
 
     },
-    textStyle1: {
-        textAlign: 'center',
-        fontWeight: 'bold',
-        fontSize: 25,
-        color: 'white',
-        paddingTop: '5%',
-        color: 'black',
-
-    },
+ 
 
 });
