@@ -34,17 +34,19 @@ export default class Login extends React.Component {
 
                         <View>
                             <Text style={styles.textStyle}>Username.Password</Text>
-                            <Item >
-
-                                <Input style={styles.inputfeilds} placeholder='Username.Password' />
-                            </Item>
-
+                            <TextInput placeholder="Username.Password"
+                            style={{height: 40, width:300, backgroundColor:'white', borderColor: 'black', borderWidth: 1,paddingLeft:10,marginLeft:18}}
+                            underlineColorAndroid='transparent'
+                           
+                          />  
+                             <Text style={{color:'red',paddingLeft:22}}>Invalid Username.Password</Text>  
                         </View>
 
                         <TouchableOpacity style={styles.button}>
 
                             <Text style={styles.buttonsText}>Login</Text>
 
+                            
                         </TouchableOpacity>
 
                         <Text
@@ -52,8 +54,7 @@ export default class Login extends React.Component {
                             onPress={() => { Linking.openURL('http://www.example.com/') }}
                         >
 
-                    Change me back please
-
+                    Forgot your password
                     </Text>
 
                     </View>
@@ -68,7 +69,7 @@ export default class Login extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#e9e9e9',
+        backgroundColor: 'white',
         width: "100%",
         height: "100%",
         alignItems: 'center',
@@ -88,7 +89,7 @@ const styles = StyleSheet.create({
             height: 100,
             // marginLeft: "18%",
             marginTop: 10,
-            backgroundColor: '#e9e9e9',
+            backgroundColor: 'white',
             marginBottom: 30,
             justifyContent: 'center',
             alignItems: 'center',
@@ -117,10 +118,11 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: "#76323f",
         padding: 10,
-        marginTop: 20,
+        marginTop: 30,
         width: 100,
         // fontSize: 30,
         borderRadius: 20,
+        marginLeft:20,
 
 
     },
@@ -133,7 +135,7 @@ const styles = StyleSheet.create({
         color: 'white',
         justifyContent: 'center',
         textAlign: 'center',
-        marginLeft: 60,
+        marginLeft: 70,
         fontWeight: 'bold',
     },
 
@@ -152,16 +154,18 @@ const styles = StyleSheet.create({
         color: '#76323f',
         width:300,
         marginTop:25,
+        marginLeft:15,
+        marginBottom:10,
 
     },
     textStyle1: {
         textAlign: 'center',
         fontWeight: 'bold',
-        fontSize: 25,
+        fontSize: 20,
         color: 'white',
         paddingTop: '5%',
         color: '#787E84',
-        
+        paddingLeft:20,
 
     },
 

@@ -11,12 +11,12 @@ export default class App extends React.Component {
   render() {
     return (
       <View>
-        {/* <Login />  */}
+        {<Login /> }
         {/* <Reset/> */}
         {/* <EnterPass /> */}
         {/* <NavInstructor /> */}
         {/* <FacultyList/> */}
-        {<AdminRegister />}
+        {/* <AdminRegister /> */}
 
       </View>
     );

@@ -29,9 +29,11 @@ export default class AdminRegister extends React.Component {
                            style={{ height: 40, width:300, backgroundColor:'white', borderColor: 'black', borderWidth: 1,paddingLeft:10,marginRight:30}}
                            placeholder="College ID"
                            underlineColorAndroid='transparent'
-                      
-                         />
                            
+                         />
+                                 <Text style={{color:'red'}}>Invalid Your College ID</Text>
+
+
                             </View>
                             <View>
                             <Text style={styles.textStyle}>Login ID</Text>
@@ -40,6 +42,7 @@ export default class AdminRegister extends React.Component {
                            underlineColorAndroid='transparent'
                      
                          />
+                                     <Text style={{color:'red'}}>Invalid Your Login ID</Text>
                             </View>
                         </View>
                         <View style={styles.main}>
@@ -51,7 +54,7 @@ export default class AdminRegister extends React.Component {
                            underlineColorAndroid='transparent'
                      
                          />
-                        
+                                     <Text style={{color:'red'}}>Invalid Your Name</Text>
                             </View>
                             <View>
                             <Text style={styles.textStyle}>Contact No.</Text>
@@ -61,6 +64,7 @@ export default class AdminRegister extends React.Component {
                            underlineColorAndroid='transparent'
                       
                          />
+                                          <Text style={{color:'red'}}>Invalid Your Contact No.</Text>
                            
                             </View>
                         </View>
@@ -73,7 +77,8 @@ export default class AdminRegister extends React.Component {
                             style={{height: 40, width:300, backgroundColor:'white', borderColor: 'black', borderWidth: 1,paddingLeft:10,marginRight:30}}
                             underlineColorAndroid='transparent'
                        
-                          />                            
+                          />   
+                                          <Text style={{color:'red'}}>Invalid Your Personal(Recovery)Email</Text>                         
                             </View>
                             <View>
                             <Text style={styles.textStyle}>College Email</Text>
@@ -83,6 +88,7 @@ export default class AdminRegister extends React.Component {
                             underlineColorAndroid='transparent'
                            
                           />    
+                               <Text style={{color:'red'}}>Invalid Your College Email</Text>  
                         
                             </View>
                         </View>
@@ -100,11 +106,12 @@ export default class AdminRegister extends React.Component {
                                  dropdownTextStyle={{fontSize:20}}
                              
                                  />
+                                     <Text style={{color:'red'}}>Invalid Your Role</Text>  
                             </View>
                             
                             <View>
                            
-                            <Text style={styles.textStyle}>Department</Text>
+                           <Text style={styles.textStyle}>Department</Text>
                            
                             <ModalDropdown 
                        
@@ -114,6 +121,7 @@ export default class AdminRegister extends React.Component {
                             dropdownTextStyle={{fontSize:15}}
                         
                             />
+                                         <Text style={{color:'red'}}>Invalid Your Department</Text>  
                            
                             </View>
                          
