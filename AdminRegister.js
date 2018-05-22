@@ -121,7 +121,7 @@ export default class AdminRegister extends React.Component {
                    
                         <TouchableOpacity style={styles.button}>
 
-                            <Text style={styles.buttonsText}>Reset</Text>
+                            <Text style={styles.buttonsText}>Register</Text>
                           
                         </TouchableOpacity>
 
@@ -153,7 +153,7 @@ const styles = StyleSheet.create({
     },
     main:{
         flexDirection: 'row',
-
+        marginLeft:20
     },
 
 
@@ -172,7 +172,7 @@ const styles = StyleSheet.create({
         backgroundColor: "#76323f",
         padding: 10,
         marginTop: 30,
-        width: 100,
+        width: 150,
         borderRadius: 20,
        
     },
@@ -185,20 +185,20 @@ const styles = StyleSheet.create({
 
     },
 
-    textStyle: {
-        textAlign: 'left',
-        marginLeft:5,
-        fontWeight: 'bold',
-        fontSize: 20,
-        color: '#76323f',
-        width:300,
-        marginTop:25,
-        marginBottom:10,
+    // textStyle: {
+    //     textAlign: 'left',
+    //     marginLeft:5,
+    //     fontWeight: 'bold',
+    //     fontSize: 20,
+    //     color: '#76323f',
+    //     width:300,
+    //     marginTop:25,
+    //     marginBottom:10,
 
-    },
+    // },
     textStyle: {
         textAlign: 'left',
-        marginLeft:45,
+        marginLeft:3,
         fontWeight: 'bold',
         fontSize: 25,
         color: '#76323f',
