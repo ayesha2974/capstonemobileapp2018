@@ -5,6 +5,8 @@ import Reset from './Reset'
 import EnterPass from './EnterPass'
 import NavInstructor from './NavInstructor'
 
+import FacultyList from './FacultyList'
+
 export default class App extends React.Component {
   render() {
     return (
@@ -13,6 +15,7 @@ export default class App extends React.Component {
         {/* <Reset/> */}
         {/* <EnterPass /> */}
         <NavInstructor />
+        {/* <FacultyList/> */}
 
       </View>
     );
