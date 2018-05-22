@@ -4,7 +4,7 @@ import Login from './login'
 import Reset from './Reset'
 import EnterPass from './EnterPass'
 import NavInstructor from './NavInstructor'
-
+import AdminRegister from './AdminRegister'
 import FacultyList from './FacultyList'
 
 export default class App extends React.Component {
@@ -14,8 +14,9 @@ export default class App extends React.Component {
         {/* <Login />  */}
         {/* <Reset/> */}
         {/* <EnterPass /> */}
-        <NavInstructor />
+        {/* <NavInstructor /> */}
         {/* <FacultyList/> */}
+        {<AdminRegister />}
 
       </View>
     );

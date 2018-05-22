@@ -1,14 +1,13 @@
-import { AppRegistry, Text, TextInput, View, Alert, StyleSheet, TouchableOpacity, Image, KeyboardAvoidingView, Linking, ScrollView} from 'react-native';
+import { AppRegistry, Text, TextInput, View, Alert, StyleSheet, TouchableOpacity, Image, KeyboardAvoidingView, Linking, ScrollView,Picker} from 'react-native';
 import React from 'react';
 import Logo from './logo.png'
 import ModalDropdown from 'react-native-modal-dropdown';
 
-import { Container, Header, Content, Form, Item, Input, Label, Button } from 'native-base';
+// import { Container, Header, Content, Form, Item, Input, Label, Button,TextInput } from 'native-base';
 
 
 
 export default class AdminRegister extends React.Component {
-
 
 
 
@@ -19,85 +18,115 @@ export default class AdminRegister extends React.Component {
 
             <View style={styles.container} >
                 <KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
-                    <View style={styles.box} >
+               
                      
-
-
                         <View style={styles.main}>
                             <View>
+
                             <Text style={styles.textStyle}>College ID</Text>
-                            <Item >
-                            <Input style={styles.inputfeilds} placeholder='College ID' />
-                            </Item> 
+                         
+                           <TextInput
+                           style={{ height: 40, width:300, backgroundColor:'white', borderColor: 'black', borderWidth: 1,paddingLeft:10,marginRight:30}}
+                           placeholder="College ID"
+                           underlineColorAndroid='transparent'
+                      
+                         />
+                           
                             </View>
                             <View>
                             <Text style={styles.textStyle}>Login ID</Text>
-                            <Item >
-                            <Input style={styles.inputfeilds} placeholder='Login ID' />
-                            </Item>
+                             <TextInput placeholder="Login ID"
+                           style={{height: 40, width:300, backgroundColor:'white', borderColor: 'black', borderWidth: 1,paddingLeft:10,marginRight:30}}
+                           underlineColorAndroid='transparent'
+                     
+                         />
                             </View>
                         </View>
                         <View style={styles.main}>
                             <View>
                             <Text style={styles.textStyle}>Name</Text>
-                            <Item >
-                            <Input style={styles.inputfeilds} placeholder='Name' />
-                            </Item> 
+                        
+                            <TextInput placeholder="Name"
+                           style={{height: 40, width:300, backgroundColor:'white', borderColor: 'black', borderWidth: 1,paddingLeft:10,marginRight:30}}
+                           underlineColorAndroid='transparent'
+                     
+                         />
+                        
                             </View>
                             <View>
                             <Text style={styles.textStyle}>Contact No.</Text>
-                            <Item >
-                            <Input style={styles.inputfeilds} placeholder='Contact No.' />
-                            </Item>
+                            
+                            <TextInput placeholder="Contact No."
+                           style={{height: 40, width:300, backgroundColor:'white', borderColor: 'black', borderWidth: 1,paddingLeft:10,marginRight:30}}
+                           underlineColorAndroid='transparent'
+                      
+                         />
+                           
                             </View>
                         </View>
 
                         <View style={styles.main}>
                             <View>
                             <Text style={styles.textStyle}>Personal(Recovery)Email</Text>
-                            <Item >
-                            <Input style={styles.inputfeilds} placeholder='Personal(Recovery)Email' />
-                            </Item> 
+                          
+                            <TextInput placeholder="Personal(Recovery)Email"
+                            style={{height: 40, width:300, backgroundColor:'white', borderColor: 'black', borderWidth: 1,paddingLeft:10,marginRight:30}}
+                            underlineColorAndroid='transparent'
+                       
+                          />                            
                             </View>
                             <View>
                             <Text style={styles.textStyle}>College Email</Text>
-                            <Item >
-                            <Input style={styles.inputfeilds} placeholder='College Email' />
-                            </Item>
+                         
+                            <TextInput placeholder="College Email"
+                            style={{height: 40, width:300, backgroundColor:'white', borderColor: 'black', borderWidth: 1,paddingLeft:10,marginRight:30}}
+                            underlineColorAndroid='transparent'
+                           
+                          />    
+                        
                             </View>
                         </View>
 
                         <View style={styles.main}>
+                    
                             <View>
                             <Text style={styles.textStyle}>Role</Text>
-                            <Item >
-                            <Input style={styles.inputfeilds} placeholder='Personal(Recovery)Email' />
-                            </Item> 
+                          
+                            <ModalDropdown 
+                            
+                                 style={{borderColor:'black', borderWidth:1,backgroundColor:'white',height: 40, width:300,marginRight:30,paddingLeft:10}}
+                                 options={['Admin','Instructor', 'Student']}
+                                 textStyle={{fontSize:20}}
+                                 dropdownTextStyle={{fontSize:20}}
+                             
+                                 />
                             </View>
+                            
                             <View>
+                           
                             <Text style={styles.textStyle}>Department</Text>
-                            <ModalDropdown style={styles.dropdown}
-                         
+                           
+                            <ModalDropdown 
+                       
+                            style={{borderColor:'black', borderWidth:1,backgroundColor:'white',height: 40, width:300,marginRight:30,paddingLeft:10}}
                             options={['Information Technology','Business', 'Engineering', 'Health']}
+                            textStyle={{fontSize:20}}
+                            dropdownTextStyle={{fontSize:15}}
                         
                             />
+                           
                             </View>
+                         
                         </View>
-                       
-
-
-                        {/* <Button rounded style={styles.buttons} >
-                        <Text style={styles.buttonsText}>Login</Text>
-                    </Button> */}
-
+                   
                         <TouchableOpacity style={styles.button}>
 
                             <Text style={styles.buttonsText}>Reset</Text>
-
+                          
                         </TouchableOpacity>
 
                     
-                    </View>
+                   
                 </KeyboardAvoidingView>
             </View>
 
@@ -108,15 +137,13 @@ export default class AdminRegister extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#e9e9e9',
+        backgroundColor: 'white',
         width: "100%",
         height: "100%",
         alignItems: 'center',
         justifyContent: 'center',
         
     },
-
-
 
     pic: {
         width: 180,
@@ -128,60 +155,26 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
 
     },
+
+
     dropdown: {
        
-       
-        fontSize:18,
-        marginBottom:10,
-
-    },
-
-    box: {
-        flex: 1,
-        width: 800,
         height: 100,
-        // flexDirection:'row',
         marginTop: 10,
-        backgroundColor: '#e9e9e9',
+        backgroundColor: 'white',
         marginBottom: 30,
         justifyContent: 'center',
         alignItems: 'center',
     },
 
-    inputfeilds: {
-        flex: 1,
-        justifyContent: 'center',
-        textAlign: 'left',
-        marginLeft:40,
-        borderWidth: 1,
-        color: 'black',
-        marginTop: 10,
-        backgroundColor: 'white',
-        fontSize: 20,
-    },
-
-
     button: {
         alignItems: 'center',
         backgroundColor: "#76323f",
         padding: 10,
-        marginTop: 20,
+        marginTop: 30,
         width: 100,
-        // fontSize: 30,
         borderRadius: 20,
-
-    },
-
-
-    buttons: {
-        marginTop: 20,
-        backgroundColor: "#fffaf0",
-        width: 80,
-        color: 'white',
-        justifyContent: 'center',
-        textAlign: 'center',
-        marginLeft: 60,
-        fontWeight: 'bold',
+       
     },
 
     buttonsText: {
@@ -192,7 +185,17 @@ const styles = StyleSheet.create({
 
     },
 
+    textStyle: {
+        textAlign: 'left',
+        marginLeft:5,
+        fontWeight: 'bold',
+        fontSize: 20,
+        color: '#76323f',
+        width:300,
+        marginTop:25,
+        marginBottom:10,
 
+    },
     textStyle: {
         textAlign: 'left',
         marginLeft:45,
@@ -213,5 +216,6 @@ const styles = StyleSheet.create({
         
 
     },
+
 
 });
