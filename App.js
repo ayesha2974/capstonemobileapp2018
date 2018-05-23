@@ -1,9 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Login from './Login'
+import Login from './login'
 import Reset from './Reset'
 import EnterPass from './EnterPass'
 import NavInstructor from './NavInstructor'
+import Chat from './Chat'
 import AdminRegister from './AdminRegister'
 import FacultyList from './FacultyList'
 
@@ -13,8 +14,9 @@ export default class App extends React.Component {
       <View>
         {/* <Login />  */}
         {/* <Reset/>  */}
-        <EnterPass />
+        {/* <EnterPass /> */}
         {/* <NavInstructor /> */}
+        <Chat />
         {/* <FacultyList/> */}
         {/* <AdminRegister /> */}
 
