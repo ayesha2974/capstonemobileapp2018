@@ -1,6 +1,8 @@
 import { Text, TextInput, View, Alert, StyleSheet, TouchableOpacity, Image, KeyboardAvoidingView, Linking, ScrollView } from 'react-native';
 import React from 'react';
 import { Constants } from 'expo';
+import ModalDropdown from 'react-native-modal-dropdown';
+import { Container, Header, Title, Content, Button, Icon, Right, Body, Left, Picker, Form } from "native-base";
 
 
 export default class NavInstructor extends React.Component {
@@ -10,15 +12,20 @@ export default class NavInstructor extends React.Component {
         return (
             <View style={styles.container}>
                 <View style={styles.navbar}>
-                    <View style={{ flexDirection: 'row' }}>
+                    <View style={styles.container1}>
                         <View>
-                            <Image style={styles.image} source={require('./panda.jpeg')} />
+                            <TouchableOpacity onPress={() => alert('Logout')}>
+                                <Image style={styles.image} source={require('./panda.jpeg')} />
+                            </TouchableOpacity>
                         </View>
-                        <View>
-                            <Text>Instructor Name</Text>
-                            <Text>60087635</Text>
+                        <View style={styles.userBox}>
+                            <Text style={styles.textStyle}>Instructor Name</Text>
+                            <Text style={styles.textStyle}>60087635</Text>
                             <TouchableOpacity>
-                                <Text>My Profile</Text>
+                                <Text style={styles.textStyle}>My Profile</Text>
+                            </TouchableOpacity>
+                            <TouchableOpacity>
+                                <Text style={styles.textStyle}>Logout</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -50,11 +57,25 @@ const styles = StyleSheet.create({
         height: '100%',
         flexDirection: 'column'
     },
+    container1: {
+        flexDirection: 'row',
+        borderBottomColor: 'white',
+        borderBottomWidth: 1,
+        height: 125
+    },
     image: {
         height: 100,
         width: 100,
         borderRadius: 50,
         margin: 10
     },
+    textStyle: {
+        color: 'white',
+        fontSize: 18,
+        letterSpacing: 1,
+    },
+    userBox: {
+        margin: 10
+    }
 
 });
