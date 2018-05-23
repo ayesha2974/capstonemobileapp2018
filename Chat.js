@@ -1,3 +1,5 @@
+chat
+
 import { Text, TextInput, View, Alert, StyleSheet, TouchableOpacity, Image, KeyboardAvoidingView, Linking, ScrollView } from 'react-native';
 import React from 'react';
 import { Constants } from 'expo';
