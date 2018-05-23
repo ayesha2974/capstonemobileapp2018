@@ -8,6 +8,7 @@ import AdminRegister from './AdminRegister'
 import FacultyList from './FacultyList'
 import InstructorGradePage from './InstructorGradePage'
 import Document from './Document'
+import StudentExam from './StudentExam'
 
 export default class App extends React.Component {
   render() {
@@ -15,13 +16,14 @@ export default class App extends React.Component {
       <View>
         {/* <Login />  */}
         {/* <Reset/>  */}
-        <EnterPass />
+        {/* <EnterPass /> */}
         {/* <NavInstructor /> */}
         {/* <FacultyList/> */}
         {/* <AdminRegister /> */}
-
         {/* <Document/> */}
-        <InstructorGradePage/>
+        {/* {<InstructorGradePage/>} */}
+      
+        <StudentExam/>
       </View>
     );
   }
