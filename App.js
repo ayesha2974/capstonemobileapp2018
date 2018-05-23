@@ -7,6 +7,8 @@ import NavInstructor from './NavInstructor'
 import Chat from './Chat'
 import AdminRegister from './AdminRegister'
 import FacultyList from './FacultyList'
+import InstructorGradePage from './InstructorGradePage'
+import Document from './Document'
 
 export default class App extends React.Component {
   render() {
@@ -20,6 +22,8 @@ export default class App extends React.Component {
         {/* <FacultyList/> */}
         {/* <AdminRegister /> */}
 
+        {/* <Document/> */}
+        <InstructorGradePage/>
       </View>
     );
   }
