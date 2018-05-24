@@ -8,7 +8,7 @@ import { Container, Header, Title, Content, Button, Icon, Right, Body, Left, Pic
 export default class NavInstructor extends React.Component {
 
     render() {
-
+ 
         return (
             <View style={styles.container}>
                 <View style={styles.navbar}>

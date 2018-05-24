@@ -4,6 +4,7 @@ import Login from './login'
 import Reset from './Reset'
 import EnterPass from './EnterPass'
 import NavInstructor from './NavInstructor'
+import NavStudent from './NavStudent'
 import Chat from './Chat'
 import AdminRegister from './AdminRegister'
 import FacultyList from './FacultyList'
@@ -19,13 +20,14 @@ export default class App extends React.Component {
         {/* <Reset/>  */}
         {/* <EnterPass /> */}
         {/* <NavInstructor /> */}
+        {/* <NavStudent /> */}
         <Chat />
         {/* <FacultyList/> */}
         {/* <AdminRegister /> */}
         {/* <Document/> */}
         {/* {<InstructorGradePage/>} */}
-      
-        <StudentExam/>
+
+        {/* <StudentExam /> */}
       </View>
     );
   }

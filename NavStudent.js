@@ -13,73 +13,76 @@ export default class NavStudent extends React.Component {
                 <View style={styles.navbar}>
                     <View style={{ flexDirection: 'row' }}>
                         <View>
-                            <Image style={styles.image} source={require('./panda.jpg')} />
+                            <Image style={styles.image} source={require('./panda.jpeg')} />
                         </View>
-                        <View>
+                        <View style={styles.userBox}>
                             <Text style={styles.text}>Student Name</Text>
                             <Text style={styles.text}>60087633</Text>
                             <TouchableOpacity>
                                 <Text style={styles.text}>My Profile</Text>
                             </TouchableOpacity>
+                            <TouchableOpacity>
+                                <Text style={styles.text}>Logout</Text>
+                            </TouchableOpacity>
                         </View>
-                       
+
                     </View>
                     <Text style={styles.line}> </Text>
                     <View>
-                    <Icon style={styles.icon} name='square-o' >
-                    <Text style={styles.text} > My Term Course </Text>
-                    </Icon>
-                    
+                        <Icon style={styles.icon} name='square-o' >
+                            <Text style={styles.text} > My Term Course </Text>
+                        </Icon>
+
                     </View>
 
-                    
-                    
+
+
                     <View>
-                    <Icon style={styles.arrow} name='arrows-v' /> 
-                    <Icon style={styles.icon1} name='square-o' >
-                    <Text style={styles.text1} > CP1801 </Text>
-                    </Icon>
+                        <Icon style={styles.arrow} name='arrows-v' />
+                        <Icon style={styles.icon1} name='square-o' >
+                            <Text style={styles.text1} > CP1801 </Text>
+                        </Icon>
 
-                    <Icon style={styles.icon2} name='square-o' >
-                    <Text style={styles.text1} > CP1820 </Text>
-                    </Icon>
+                        <Icon style={styles.icon2} name='square-o' >
+                            <Text style={styles.text1} > CP1820 </Text>
+                        </Icon>
 
-                    <Icon style={styles.icon2} name='square-o' >
-                    <Text style={styles.text1} > CP1803 </Text>
-                    </Icon>
+                        <Icon style={styles.icon2} name='square-o' >
+                            <Text style={styles.text1} > CP1803 </Text>
+                        </Icon>
 
-                    <Icon style={styles.icon2} name='square-o' >
-                    <Text style={styles.text1} > CP1850 </Text>
-                    </Icon>
-                   </View>
-                   <Text style={styles.line}> </Text>
-                   <View>
-                    <Icon style={styles.icon} name='square-o' >
-                    <Text style={styles.text} > My Term Course </Text>
-                    </Icon>
-                    
+                        <Icon style={styles.icon2} name='square-o' >
+                            <Text style={styles.text1} > CP1850 </Text>
+                        </Icon>
+                    </View>
+                    <Text style={styles.line}> </Text>
+                    <View>
+                        <Icon style={styles.icon} name='square-o' >
+                            <Text style={styles.text} > My Term Course </Text>
+                        </Icon>
+
                     </View>
 
-                    
-                    
+
+
                     <View>
-                    <Icon style={styles.arrow} name='arrows-v' /> 
-                    <Icon style={styles.icon1} name='square-o' >
-                    <Text style={styles.text1} > CP1801 </Text>
-                    </Icon>
+                        <Icon style={styles.arrow} name='arrows-v' />
+                        <Icon style={styles.icon1} name='square-o' >
+                            <Text style={styles.text1} > CP1801 </Text>
+                        </Icon>
 
-                    <Icon style={styles.icon2} name='square-o' >
-                    <Text style={styles.text1} > CP1820 </Text>
-                    </Icon>
+                        <Icon style={styles.icon2} name='square-o' >
+                            <Text style={styles.text1} > CP1820 </Text>
+                        </Icon>
 
-                    <Icon style={styles.icon2} name='square-o' >
-                    <Text style={styles.text1} > CP1803 </Text>
-                    </Icon>
+                        <Icon style={styles.icon2} name='square-o' >
+                            <Text style={styles.text1} > CP1803 </Text>
+                        </Icon>
 
-                    <Icon style={styles.icon2} name='square-o' >
-                    <Text style={styles.text1} > CP1850 </Text>
-                    </Icon>
-                   </View>
+                        <Icon style={styles.icon2} name='square-o' >
+                            <Text style={styles.text1} > CP1850 </Text>
+                        </Icon>
+                    </View>
                 </View>
             </View>
         );
@@ -106,53 +109,57 @@ const styles = StyleSheet.create({
         borderRadius: 50,
         margin: 10
     },
-    text:{
-        paddingTop:10, 
-        paddingLeft:15,
-        fontSize:18,
+    text: {
+        // paddingTop: 10,
+        // paddingLeft: 15,
+        fontSize: 18,
+        letterSpacing: 1,
         color: 'white',
-      
+
     },
-    line:{
-        borderBottomWidth:1,
-        borderColor:'white',
-        marginLeft:20,
-        marginRight:30
+    userBox: {
+        margin: 10
     },
-    icon:{
-        color:'white',
-        fontSize:30,
-        marginLeft:30,
-         marginTop:10,
-        
+    line: {
+        borderBottomWidth: 1,
+        borderColor: 'white',
+        marginLeft: 20,
+        marginRight: 30
     },
-    text1:{
-   
-        paddingLeft:15,
-        fontSize:18,
+    icon: {
+        color: 'white',
+        fontSize: 30,
+        marginLeft: 30,
+        marginTop: 10,
+
+    },
+    text1: {
+
+        paddingLeft: 15,
+        fontSize: 18,
         color: 'white',
         textAlign: 'center',
-        
+
     },
-   
-     icon1:{
-        color:'white',
-        fontSize:30,
-        marginLeft:60,
-        marginTop:30,
-        
+
+    icon1: {
+        color: 'white',
+        fontSize: 30,
+        marginLeft: 60,
+        marginTop: 30,
+
     },
-    icon2:{
-        color:'white',
-        fontSize:30,
-        marginLeft:60,  
+    icon2: {
+        color: 'white',
+        fontSize: 30,
+        marginLeft: 60,
     },
-    arrow:{
-        textAlign:'right',
-        fontSize:50,
-        marginRight:20
+    arrow: {
+        textAlign: 'right',
+        fontSize: 50,
+        marginRight: 20
     }
-    
+
 
 
 });
