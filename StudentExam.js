@@ -23,7 +23,7 @@ export default class StudentExam extends React.Component {
 
 
                             <View style={styles.main}>
-                                <Text style={{fontWeight: 'bold', fontSize: 15,paddingRight:50 }}  > Work Detail  </Text>
+                                <Text style={{fontWeight: 'bold', fontSize: 15,paddingRight:50}}  > Work Detail  </Text>
                                 <Text style={{fontWeight: 'bold', fontSize: 15,paddingLeft:5 }}  >  CP1818 </Text>
                                 <Icon style={{marginLeft:60}}name='calendar'/>
                                 <Text style={styles.textDate}  > Start Date </Text>
@@ -34,7 +34,7 @@ export default class StudentExam extends React.Component {
                                
                                 
                             </View>
-                            <View>
+                            <View style={styles.middle}>
                                 <Text style={{ paddingTop: 80 }}>Q1 Write a Java program that..... </Text>
                                 <View style={{ flexDirection: 'row', paddingTop: 20 }}>
                                    
@@ -47,13 +47,13 @@ export default class StudentExam extends React.Component {
                                 <View>
                                  <TouchableOpacity style={styles.button}>
                                  
-                                      <Text style={styles.buttonsText}>update</Text>
+                                      <Text style={styles.buttonsText}>Update</Text>
                                                            
                                  </TouchableOpacity>
                                      </View>       
                             </View>
 
-                            <View>
+                            <View style={styles.middle}>
                             <Text style={{ paddingTop: 10 }}>Q2 Write a Java program that..... </Text>
                             <View style={{ flexDirection: 'row', paddingTop: 10 }}>
                                
@@ -66,12 +66,12 @@ export default class StudentExam extends React.Component {
                             <View>
                              <TouchableOpacity style={styles.button}>
                              
-                                  <Text style={styles.buttonsText}>update</Text>
+                                  <Text style={styles.buttonsText}>Update</Text>
                                                        
                              </TouchableOpacity>
                                  </View>       
                         </View>
-                        <View>
+                        <View style={styles.middle}>
                             <Text style={{ paddingTop: 10 }}>Q3 Write a Java program that..... </Text>
                             <View style={{ flexDirection: 'row', paddingTop: 10 }}>
                                
@@ -84,13 +84,13 @@ export default class StudentExam extends React.Component {
                             <View>
                              <TouchableOpacity style={styles.button}>
                              
-                                  <Text style={styles.buttonsText}>update</Text>
+                                  <Text style={styles.buttonsText}>Update</Text>
                                                        
                              </TouchableOpacity>
                                  </View>       
                         </View>
 
-                        <View>
+                        <View style={styles.middle}>
                             <Text style={{ paddingTop: 10 }}>Q4 Write a Java program that..... </Text>
                             <View style={{ flexDirection: 'row', paddingTop: 10 }}>
                                
@@ -103,7 +103,7 @@ export default class StudentExam extends React.Component {
                             <View>
                              <TouchableOpacity style={styles.button}>
                              
-                                  <Text style={styles.buttonsText}>update</Text>
+                                  <Text style={styles.buttonsText}>Update</Text>
                                                        
                              </TouchableOpacity>
                                  </View>       
@@ -149,12 +149,15 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         justifyContent: 'center',
         alignItems: 'center',
-        marginLeft: 80,
+        marginLeft: 90,
         marginRight: 80,
 
         // paddingRight: 85,
     },
-
+    middle:{
+        marginLeft: 100,
+        marginRight: 80,
+    },
 
     dropdown: {
 
@@ -183,10 +186,11 @@ const styles = StyleSheet.create({
         marginTop: 30,
         width: 100,
         height: 40,
-        marginLeft:50,
+        // marginLeft:50,
         borderRadius: 20,
         marginBottom:50,
-        justifyContent: 'center'
+        justifyContent: 'center',
+        marginLeft:5
 
     },
 

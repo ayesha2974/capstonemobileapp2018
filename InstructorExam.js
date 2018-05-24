@@ -5,7 +5,7 @@ import ModalDropdown from 'react-native-modal-dropdown';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {Constants} from 'expo';
 
-export default class Document extends React.Component {
+export default class InstructorExam extends React.Component {
 
 
  

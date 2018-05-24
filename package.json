@@ -23,7 +23,10 @@
     "native-base": "^2.4.4",
     "react": "16.3.1",
     "react-native": "~0.55.2",
+    "react-native-bar-collapsible": "^1.6.0",
+    "react-native-expandable-section-list": "^1.0.7",
     "react-native-modal-dropdown": "^0.6.2",
-    "react-native-table-component": "^1.1.8"
+    "react-native-table-component": "^1.1.8",
+    "wqs-react-native-collapsible": "0.0.4"
   }
 }
