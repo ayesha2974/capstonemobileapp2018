@@ -11,9 +11,7 @@ import FacultyList from './FacultyList'
 import AdminProfile from './AdminProfile'
 import InstructorGradePage from './InstructorGradePage'
 import InstructorExam from './InstructorExam'
-import StudentExam from './StudentExam'
-import Test2 from './Test2'
-import Instructor from './Instructor'
+// import StudentExam from './StudentExam'
 
 export default class App extends React.Component {
   render() {
@@ -23,14 +21,12 @@ export default class App extends React.Component {
         {/* <Reset/>  */}
         {/* <EnterPass /> */}
         {/* <NavInstructor /> */}
-        {/* <NavStudent /> */}
+        <NavStudent />
         {/* <Chat /> */}
         {/* <FacultyList/> */}
         {/* <AdminRegister /> */}
         {/* <InstructorExam/> */}
         {/* {<InstructorGradePage/>} */}
-        {/* <Instructor/> */}
-
         {/* <StudentExam /> */}
          {/* <Test /> */}
          {/* <Test2 />  */}
