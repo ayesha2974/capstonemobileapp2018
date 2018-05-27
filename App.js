@@ -12,6 +12,9 @@ import AdminProfile from './AdminProfile'
 import InstructorGradePage from './InstructorGradePage'
 import InstructorExam from './InstructorExam'
 // import StudentExam from './StudentExam'
+import InstructorProfile from './InstructorProfile'
+import StudentProfile from './StudentProfile'
+
 
 export default class App extends React.Component {
   render() {
@@ -31,7 +34,9 @@ export default class App extends React.Component {
          {/* <Test /> */}
          {/* <Test2 />  */}
          {/* <Test3 /> */}
-         {/* <AdminProfile/>  */}
+       {/* <AdminProfile/>  */}
+         {/* <InstructorProfile/>  */}
+         <StudentProfile/>  
       </View>
     );
   }
