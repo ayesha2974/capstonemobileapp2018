@@ -9,7 +9,7 @@ export default class NavStudent extends React.Component {
 
     state = { checked: true }
     render() {
- 
+
         return (
             <View style={styles.container}>
                 <View style={styles.navbar}>
@@ -35,67 +35,306 @@ export default class NavStudent extends React.Component {
 
                     <Text style={styles.line}> </Text>
                     <View style={{ flexDirection: 'row' }}>
-                        {/* <Icon style={styles.icon} name='square-o' > */}
-                        <CheckBox style={styles.checkboxe1} checked={this.state.allmoviechecked} color='black'
-                            onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
+                        <CheckBox style={styles.checkboxe1} color='white'
+                        />
                         <Text style={styles.collaps1} > My Term Course </Text>
-
-                        {/* </Icon> */}
                     </View>
 
 
-                    <View style={{ height: 150 }}>
+                    <View style={{ height: 300 }}>
                         <ScrollView
                             horizontal={false}
                             pagingEnabled={false}
                             automaticallyAdjustInsets={true}
                         >
-                            <View style={styles.checkboxes} >
-                                {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                <CheckBox checked={this.state.allmoviechecked} color='black'
-                                    onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
-                                <Text style={styles.text1} > CP1801 </Text>
-                               
+                            <View style={{ flexDirection: 'column' }}>
                             
-                                <Bar
-                                   style={{ backgroundColor: '#76323f', marginLeft: 10, width: 230, marginTop: 20, }}
-                                    collapsible={true}
-                                    showOnStart={true}
-                                    iconCollapsed='chevron-down'
-                                    iconOpened='chevron-up'
-                                    tintColor='white'
-                                    iconSize={20}
-                                >
-
-                                <View style={{ flexDirection: 'row' }}>
-                                    <CheckBox style={styles.checkboxe3} checked={this.state.allmoviechecked} color='black'
-                                        onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
-
-                                    <Image style={styles.image1} source={require('./panda.jpeg')} />
-                                    <Text > Secation 1- Wagdi </Text>
-                                    <Text > Secation 2- Wagdi </Text>
+                                <View style={styles.checkboxes4} >
+                                    <CheckBox color='white'/>
+                                    <Bar
+                                 style={{ backgroundColor: '#76323f', marginLeft: 10, width: 230,marginTop:-10 }}
+                                 title='CP1801'
+                                titleStyle={{ fontSize: 18 }}
+                                collapsible={true}
+                                showOnStart={false}
+                                iconCollapsed='chevron-right'
+                                iconOpened='chevron-down'
+                                tintColor='white'
+                                iconSize={20}
+                                > 
+                               <View style={{ flexDirection: 'row',marginLeft:1}}>
+                                    <View style={{  marginLeft:-10 ,marginTop:15}}>
+                                        <CheckBox color='white' 
+                                        />
                                     </View>
+                                    <View>
+                                        <Image style={styles.imageSamll} source={require('./nalin.jpg')} />
+                                    </View>
+                                    <View>
+                                     <Text  style={styles.text2} >Section 1 - Nalin</Text>
+                                    </View>
+                                </View>
+
+                                <View style={{ flexDirection: 'row',marginLeft:1}}>
+                                    <View style={{  marginLeft:-10 ,marginTop:15}}>
+                                        <CheckBox color='white' 
+                                        />
+                                    </View>
+                                    <View>
+                                        <Image style={styles.imageSamll} source={require('./doug.jpg')} />
+                                    </View>
+                                    <View>
+                                     <Text  style={styles.text2} >Section 2 - Doug</Text>
+                                    </View>
+                                </View>
+
+                                <View style={{ flexDirection: 'row',marginLeft:1}}>
+                                    <View style={{  marginLeft:-10 ,marginTop:15}}>
+                                        <CheckBox color='white' 
+                                        />
+                                    </View>
+                                    <View>
+                                        <Image style={styles.imageSamll} source={require('./wagdi.jpg')} />
+                                    </View>
+                                    <View>
+                                     <Text  style={styles.text2} >Section 1 - Wagdi</Text>
+                                    </View>
+                                </View>
+
+                                <View style={{ flexDirection: 'row',marginLeft:1}}>
+                                    <View style={{  marginLeft:-10 ,marginTop:15}}>
+                                        <CheckBox color='white' 
+                                        />
+                                    </View>
+                                    <View>
+                                        <Image style={styles.imageSamll} source={require('./fathi.jpg')} />
+                                    </View>
+                                    <View>
+                                     <Text  style={styles.text2} >Section 2 - Fathi</Text>
+                                    </View>
+                                </View>
+
+
                                 </Bar>
-                               
                             </View>
-                            <View style={styles.checkboxes} >
-                                {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                <CheckBox checked={this.state.allmoviechecked} color='black'
-                                    onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
-                                <Text style={styles.text1} > CP1820 </Text>
                             </View>
-                            <View style={styles.checkboxes} >
-                                {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                <CheckBox checked={this.state.allmoviechecked} color='black'
-                                    onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
-                                <Text style={styles.text1} > CP1803 </Text>
+                          
+
+                            <View style={{ flexDirection: 'column' }}>
+                            
+                                <View style={styles.checkboxes4} >
+                                    <CheckBox color='white'/>
+                                    <Bar
+                                 style={{ backgroundColor: '#76323f', marginLeft: 10, width: 230,marginTop:-10 }}
+                                 title='CP1820'
+                                titleStyle={{ fontSize: 18 }}
+                                collapsible={true}
+                                showOnStart={false}
+                                iconCollapsed='chevron-right'
+                                iconOpened='chevron-down'
+                                tintColor='white'
+                                iconSize={20}
+                                > 
+                                <View style={{ flexDirection: 'row',marginLeft:1}}>
+                                <View style={{  marginLeft:-10 ,marginTop:15}}>
+                                    <CheckBox color='white' 
+                                    />
+                                </View>
+                                <View>
+                                    <Image style={styles.imageSamll} source={require('./nalin.jpg')} />
+                                </View>
+                                <View>
+                                 <Text  style={styles.text2} >Section 1 - Nalin</Text>
+                                </View>
                             </View>
-                            <View style={styles.checkboxes} >
-                                {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                <CheckBox checked={this.state.allmoviechecked} color='black'
-                                    onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
-                                <Text style={styles.text1} > CP1850 </Text>
+
+                            <View style={{ flexDirection: 'row',marginLeft:1}}>
+                                <View style={{  marginLeft:-10 ,marginTop:15}}>
+                                    <CheckBox color='white' 
+                                    />
+                                </View>
+                                <View>
+                                    <Image style={styles.imageSamll} source={require('./doug.jpg')} />
+                                </View>
+                                <View>
+                                 <Text  style={styles.text2} >Section 2 - Doug</Text>
+                                </View>
                             </View>
+
+                            <View style={{ flexDirection: 'row',marginLeft:1}}>
+                                <View style={{  marginLeft:-10 ,marginTop:15}}>
+                                    <CheckBox color='white' 
+                                    />
+                                </View>
+                                <View>
+                                    <Image style={styles.imageSamll} source={require('./wagdi.jpg')} />
+                                </View>
+                                <View>
+                                 <Text  style={styles.text2} >Section 1 - Wagdi</Text>
+                                </View>
+                            </View>
+
+                            <View style={{ flexDirection: 'row',marginLeft:1}}>
+                                <View style={{  marginLeft:-10 ,marginTop:15}}>
+                                    <CheckBox color='white' 
+                                    />
+                                </View>
+                                <View>
+                                    <Image style={styles.imageSamll} source={require('./fathi.jpg')} />
+                                </View>
+                                <View>
+                                 <Text  style={styles.text2} >Section 2 - Fathi</Text>
+                                </View>
+                            </View>
+
+                                </Bar>
+                            </View>
+                            </View>
+
+                         
+                            <View style={{ flexDirection: 'column' }}>
+                            
+                                <View style={styles.checkboxes4} >
+                                    <CheckBox color='white'/>
+                                    <Bar
+                                 style={{ backgroundColor: '#76323f', marginLeft: 10, width: 230,marginTop:-10 }}
+                                 title='CP1803'
+                                titleStyle={{ fontSize: 18 }}
+                                collapsible={true}
+                                showOnStart={false}
+                                iconCollapsed='chevron-right'
+                                iconOpened='chevron-down'
+                                tintColor='white'
+                                iconSize={20}
+                                > 
+                                <View style={{ flexDirection: 'row',marginLeft:1}}>
+                                <View style={{  marginLeft:-10 ,marginTop:15}}>
+                                    <CheckBox color='white' 
+                                    />
+                                </View>
+                                <View>
+                                    <Image style={styles.imageSamll} source={require('./nalin.jpg')} />
+                                </View>
+                                <View>
+                                 <Text  style={styles.text2} >Section 1 - Nalin</Text>
+                                </View>
+                            </View>
+
+                            <View style={{ flexDirection: 'row',marginLeft:1}}>
+                                <View style={{  marginLeft:-10 ,marginTop:15}}>
+                                    <CheckBox color='white' 
+                                    />
+                                </View>
+                                <View>
+                                    <Image style={styles.imageSamll} source={require('./doug.jpg')} />
+                                </View>
+                                <View>
+                                 <Text  style={styles.text2} >Section 2 - Doug</Text>
+                                </View>
+                            </View>
+
+                            <View style={{ flexDirection: 'row',marginLeft:1}}>
+                                <View style={{  marginLeft:-10 ,marginTop:15}}>
+                                    <CheckBox color='white' 
+                                    />
+                                </View>
+                                <View>
+                                    <Image style={styles.imageSamll} source={require('./wagdi.jpg')} />
+                                </View>
+                                <View>
+                                 <Text  style={styles.text2} >Section 1 - Wagdi</Text>
+                                </View>
+                            </View>
+
+                            <View style={{ flexDirection: 'row',marginLeft:1}}>
+                                <View style={{  marginLeft:-10 ,marginTop:15}}>
+                                    <CheckBox color='white' 
+                                    />
+                                </View>
+                                <View>
+                                    <Image style={styles.imageSamll} source={require('./fathi.jpg')} />
+                                </View>
+                                <View>
+                                 <Text  style={styles.text2} >Section 2 - Fathi</Text>
+                                </View>
+                            </View>
+
+                                </Bar>
+                            </View>
+                            </View>
+
+
+                            <View style={{ flexDirection: 'column' }}>
+                            
+                                <View style={styles.checkboxes4} >
+                                    <CheckBox color='white'/>
+                                    <Bar
+                                 style={{ backgroundColor: '#76323f', marginLeft: 10, width: 230,marginTop:-10 }}
+                                 title='CP1850'
+                                titleStyle={{ fontSize: 18 }}
+                                collapsible={true}
+                                showOnStart={false}
+                                iconCollapsed='chevron-right'
+                                iconOpened='chevron-down'
+                                tintColor='white'
+                                iconSize={20}
+                                > 
+                                <View style={{ flexDirection: 'row',marginLeft:1}}>
+                                <View style={{  marginLeft:-10 ,marginTop:15}}>
+                                    <CheckBox color='white' 
+                                    />
+                                </View>
+                                <View>
+                                    <Image style={styles.imageSamll} source={require('./nalin.jpg')} />
+                                </View>
+                                <View>
+                                 <Text  style={styles.text2} >Section 1 - Nalin</Text>
+                                </View>
+                            </View>
+
+                            <View style={{ flexDirection: 'row',marginLeft:1}}>
+                                <View style={{  marginLeft:-10 ,marginTop:15}}>
+                                    <CheckBox color='white' 
+                                    />
+                                </View>
+                                <View>
+                                    <Image style={styles.imageSamll} source={require('./doug.jpg')} />
+                                </View>
+                                <View>
+                                 <Text  style={styles.text2} >Section 2 - Doug</Text>
+                                </View>
+                            </View>
+
+                            <View style={{ flexDirection: 'row',marginLeft:1}}>
+                                <View style={{  marginLeft:-10 ,marginTop:15}}>
+                                    <CheckBox color='white' 
+                                    />
+                                </View>
+                                <View>
+                                    <Image style={styles.imageSamll} source={require('./wagdi.jpg')} />
+                                </View>
+                                <View>
+                                 <Text  style={styles.text2} >Section 1 - Wagdi</Text>
+                                </View>
+                            </View>
+
+                            <View style={{ flexDirection: 'row',marginLeft:1}}>
+                                <View style={{  marginLeft:-10 ,marginTop:15}}>
+                                    <CheckBox color='white' 
+                                    />
+                                </View>
+                                <View>
+                                    <Image style={styles.imageSamll} source={require('./fathi.jpg')} />
+                                </View>
+                                <View>
+                                 <Text  style={styles.text2} >Section 2 - Fathi</Text>
+                                </View>
+                            </View>
+
+                                </Bar>
+                            </View>
+                            </View>
+                           
                         </ScrollView>
                     </View>
 
@@ -103,15 +342,16 @@ export default class NavStudent extends React.Component {
                     <Text style={styles.line}> </Text>
                     <View style={{ flexDirection: 'row', }}>
 
-                        <CheckBox style={styles.checkboxe2} checked={this.state.allmoviechecked} color='black'
-                            onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
+                        <CheckBox style={styles.checkboxe2} color='white'
+                        />
                         <Bar
                             style={{ backgroundColor: '#76323f', marginLeft: 10, width: 230, marginTop: 20, }}
                             title='My Previous Course'
+                            titleStyle={{ fontSize: 18 }}
                             collapsible={true}
-                            showOnStart={true}
-                            iconCollapsed='chevron-down'
-                            iconOpened='chevron-up'
+                            showOnStart={false}
+                            iconCollapsed='chevron-right'
+                            iconOpened='chevron-down'
                             tintColor='white'
                             iconSize={20}
                         >
@@ -133,27 +373,27 @@ export default class NavStudent extends React.Component {
                                 >
                                     <View style={styles.checkboxes} >
                                         {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox checked={this.state.allmoviechecked} color='white'
-                                            onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
+                                        <CheckBox color='white'
+                                        />
                                         <Text style={styles.text1} > CP1801 </Text>
 
                                     </View>
                                     <View style={styles.checkboxes} >
                                         {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox checked={this.state.allmoviechecked} color='white'
-                                            onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
+                                        <CheckBox color='white'
+                                        />
                                         <Text style={styles.text1} > CP1820 </Text>
                                     </View>
                                     <View style={styles.checkboxes} >
                                         {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox checked={this.state.allmoviechecked} color='white'
-                                            onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
+                                        <CheckBox color='white'
+                                        />
                                         <Text style={styles.text1} > CP1803 </Text>
                                     </View>
                                     <View style={styles.checkboxes} >
                                         {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox checked={this.state.allmoviechecked} color='white'
-                                            onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
+                                        <CheckBox color='white'
+                                        />
                                         <Text style={styles.text1} > CP1850 </Text>
                                     </View>
                                 </ScrollView>
@@ -181,6 +421,28 @@ export default class NavStudent extends React.Component {
 }
 
 
+
+
+                        //       <Bar
+                        //             style={{ backgroundColor: '#76323f', marginLeft: 2, width: 230, marginTop: 10, }}
+                        //             collapsible={true}
+                        //             showOnStart={true}
+                        //             iconCollapsed='chevron-down'
+                        //             iconOpened='chevron-up'
+                        //             tintColor='white'
+                        //             iconSize={20}
+                        //         > 
+                        //   <View style={{ flexDirection: 'row', marginLeft: 2 }}>
+                        //             <CheckBox style={styles.checkboxe3} color='black'
+                        //             />
+
+                        //             <Image style={styles.image1} source={require('./panda.jpeg')} />
+                        //             <Text > Secation 1- Wagdi </Text>
+                        //             <Text > Secation 2- Wagdi </Text>
+                        //         </View> 
+                        //    </Bar> 
+
+
 const styles = StyleSheet.create({
     container: {
         width: '100%',
@@ -205,6 +467,14 @@ const styles = StyleSheet.create({
         width: 50,
         borderRadius: 50,
         margin: 10
+    },
+    imageSamll: {
+        height: 50,
+        width: 50,
+        borderRadius: 25,
+        // margin: 10,
+        marginTop:6,
+        marginLeft:20
     },
     text: {
 
@@ -234,6 +504,15 @@ const styles = StyleSheet.create({
         textAlign: 'center',
 
     },
+    text2: {
+        
+                fontSize: 18,
+                color: 'white',
+                textAlign: 'center',
+                marginTop:15,
+                marginLeft:5
+        
+            },
 
     icon1: {
         color: 'white',
@@ -267,9 +546,15 @@ const styles = StyleSheet.create({
         marginLeft: 45,
         marginTop: 15,
         padding: 1
-
-
     },
+   
+
+    checkboxes4: {
+        flexDirection: 'row',
+        marginLeft: 45,
+        marginTop: 30,
+    },
+   
     checkboxe1: {
 
         marginLeft: 18,
@@ -283,9 +568,11 @@ const styles = StyleSheet.create({
         // padding: 1
     },
     checkboxe3: {
-    marginRight:10,
-    
+        marginRight: 10,
+        // marginLeft: 3,
+
     },
+    
     collaps1: {
         marginLeft: 5,
         fontSize: 18,
