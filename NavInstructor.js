@@ -316,7 +316,7 @@ export default class NavStudent extends React.Component {
                                 <View>
                                  <Text  style={styles.text2} >Section 1 - Wagdi</Text>
                                 </View>
-                            </View>
+                            </View>  
 
                             <View style={{ flexDirection: 'row',marginLeft:1}}>
                                 <View style={{  marginLeft:-10 ,marginTop:15}}>
