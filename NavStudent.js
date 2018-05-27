@@ -27,9 +27,20 @@ export default class NavStudent extends React.Component {
                     <Text style={styles.line}> </Text>
                     <View style={{ flexDirection: 'row' }}>
                         {/* <Icon style={styles.icon} name='square-o' > */}
-                        <CheckBox style={styles.checkboxe1}  color='black'
+                        <CheckBox style={styles.checkboxe1}  checked={true} color='black'
                             />
-                        <Text style={styles.collaps1} > My Term Course </Text>
+                            <Bar
+                        style={{ backgroundColor: '#76323f', marginLeft: 10, width: 230, marginTop: 15, }}
+                        title='My Term Course'
+                        titleStyle={{ fontSize: 18 }}
+                        collapsible={true}
+                        showOnStart={false}
+                        iconCollapsed='chevron-right'
+                        iconOpened='chevron-down'
+                        tintColor='white'
+                        iconSize={20}
+                    >
+                    <View>
                         {/* </Icon> */}
                     </View>
                     <View style={{ height: 150 }}>
@@ -40,29 +51,31 @@ export default class NavStudent extends React.Component {
                         >
                             <View style={styles.checkboxes} >
                                 {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                <CheckBox  color='black'
+                                <CheckBox  checked={true} color='black'
                                     />
                                 <Text style={styles.text1} > CP1801 </Text>
                             </View>
                             <View style={styles.checkboxes} >
                                 {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                <CheckBox  color='black'
+                                <CheckBox  checked={true} color='black'
                                     />
                                 <Text style={styles.text1} > CP1820 </Text>
                             </View>
                             <View style={styles.checkboxes} >
                                 {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                <CheckBox  color='black'
+                                <CheckBox  checked={true} color='black'
                                     />
                                 <Text style={styles.text1} > CP1803 </Text>
                             </View>
                             <View style={styles.checkboxes} >
                                 {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                <CheckBox  color='black'
+                                <CheckBox  checked={true} color='black'
                                     />
                                 <Text style={styles.text1} > CP1850 </Text>
                             </View>
                         </ScrollView>
+                    </View>
+                    </Bar>
                     </View>
                     <Text style={styles.line}> </Text>
                     <View style={{ flexDirection: 'row', }}>
@@ -73,7 +86,7 @@ export default class NavStudent extends React.Component {
                         {/* 
                     </View>
                     <View> */}
-                        <CheckBox style={styles.checkboxe2}  color='black'
+                        <CheckBox style={styles.checkboxe2}  checked={true} color='black'
                            />
                         <Bar
                             style={{ backgroundColor: '#76323f', marginLeft: 10, width: 230, marginTop: 20, }}
@@ -100,25 +113,25 @@ export default class NavStudent extends React.Component {
                                 >
                                     <View style={styles.checkboxes} >
                                         {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox  color='white'
+                                        <CheckBox checked={true} color='black'
                                             />
                                         <Text style={styles.text1} > CP1801 </Text>
                                     </View>
                                     <View style={styles.checkboxes} >
                                         {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox  color='white'
+                                        <CheckBox  checked={true} color='black'
                                             />
                                         <Text style={styles.text1} > CP1820 </Text>
                                     </View>
                                     <View style={styles.checkboxes} >
                                         {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox  color='white'
+                                        <CheckBox  checked={true} color='black'
                                             />
                                         <Text style={styles.text1} > CP1803 </Text>
                                     </View>
                                     <View style={styles.checkboxes} >
                                         {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox  color='white'
+                                        <CheckBox  checked={true} color='black'
                                             />
                                         <Text style={styles.text1} > CP1850 </Text>
                                     </View>

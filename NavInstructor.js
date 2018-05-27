@@ -35,13 +35,24 @@ export default class NavStudent extends React.Component {
 
                     <Text style={styles.line}> </Text>
                     <View style={{ flexDirection: 'row' }}>
-                        <CheckBox style={styles.checkboxe1} color='white'
+                        <CheckBox style={styles.checkboxe1} checked={true} color='black'
                         />
-                        <Text style={styles.collaps1} > My Term Course </Text>
+                        <Bar
+                        style={{ backgroundColor: '#76323f', marginLeft: 10, width: 230, marginTop: 15, }}
+                        title='My Term Course'
+                        titleStyle={{ fontSize: 18 }}
+                        collapsible={true}
+                        showOnStart={false}
+                        iconCollapsed='chevron-right'
+                        iconOpened='chevron-down'
+                        tintColor='white'
+                        iconSize={20}
+                    >
+                                <View>
                     </View>
 
 
-                    <View style={{ height: 300 }}>
+                    <View style={{ height: 200 }}>
                         <ScrollView
                             horizontal={false}
                             pagingEnabled={false}
@@ -50,7 +61,7 @@ export default class NavStudent extends React.Component {
                             <View style={{ flexDirection: 'column' }}>
                             
                                 <View style={styles.checkboxes4} >
-                                    <CheckBox color='white'/>
+                                    <CheckBox checked={true} color='black'/>
                                     <Bar
                                  style={{ backgroundColor: '#76323f', marginLeft: 10, width: 230,marginTop:-10 }}
                                  title='CP1801'
@@ -64,7 +75,7 @@ export default class NavStudent extends React.Component {
                                 > 
                                <View style={{ flexDirection: 'row',marginLeft:1}}>
                                     <View style={{  marginLeft:-10 ,marginTop:15}}>
-                                        <CheckBox color='white' 
+                                        <CheckBox checked={true} color='black'
                                         />
                                     </View>
                                     <View>
@@ -77,7 +88,7 @@ export default class NavStudent extends React.Component {
 
                                 <View style={{ flexDirection: 'row',marginLeft:1}}>
                                     <View style={{  marginLeft:-10 ,marginTop:15}}>
-                                        <CheckBox color='white' 
+                                        <CheckBox checked={true} color='black'
                                         />
                                     </View>
                                     <View>
@@ -90,7 +101,7 @@ export default class NavStudent extends React.Component {
 
                                 <View style={{ flexDirection: 'row',marginLeft:1}}>
                                     <View style={{  marginLeft:-10 ,marginTop:15}}>
-                                        <CheckBox color='white' 
+                                        <CheckBox checked={true} color='black'
                                         />
                                     </View>
                                     <View>
@@ -103,7 +114,7 @@ export default class NavStudent extends React.Component {
 
                                 <View style={{ flexDirection: 'row',marginLeft:1}}>
                                     <View style={{  marginLeft:-10 ,marginTop:15}}>
-                                        <CheckBox color='white' 
+                                        <CheckBox checked={true} color='black'
                                         />
                                     </View>
                                     <View>
@@ -114,16 +125,19 @@ export default class NavStudent extends React.Component {
                                     </View>
                                 </View>
 
-
+                                
                                 </Bar>
                             </View>
-                            </View>
                           
+                          
+                           
+                            
+                            </View>
 
                             <View style={{ flexDirection: 'column' }}>
                             
                                 <View style={styles.checkboxes4} >
-                                    <CheckBox color='white'/>
+                                    <CheckBox checked={true} color='black'/>
                                     <Bar
                                  style={{ backgroundColor: '#76323f', marginLeft: 10, width: 230,marginTop:-10 }}
                                  title='CP1820'
@@ -137,7 +151,7 @@ export default class NavStudent extends React.Component {
                                 > 
                                 <View style={{ flexDirection: 'row',marginLeft:1}}>
                                 <View style={{  marginLeft:-10 ,marginTop:15}}>
-                                    <CheckBox color='white' 
+                                    <CheckBox checked={true} color='black' 
                                     />
                                 </View>
                                 <View>
@@ -150,7 +164,7 @@ export default class NavStudent extends React.Component {
 
                             <View style={{ flexDirection: 'row',marginLeft:1}}>
                                 <View style={{  marginLeft:-10 ,marginTop:15}}>
-                                    <CheckBox color='white' 
+                                    <CheckBox checked={true} color='black'
                                     />
                                 </View>
                                 <View>
@@ -163,7 +177,7 @@ export default class NavStudent extends React.Component {
 
                             <View style={{ flexDirection: 'row',marginLeft:1}}>
                                 <View style={{  marginLeft:-10 ,marginTop:15}}>
-                                    <CheckBox color='white' 
+                                    <CheckBox checked={true} color='black'
                                     />
                                 </View>
                                 <View>
@@ -176,7 +190,7 @@ export default class NavStudent extends React.Component {
 
                             <View style={{ flexDirection: 'row',marginLeft:1}}>
                                 <View style={{  marginLeft:-10 ,marginTop:15}}>
-                                    <CheckBox color='white' 
+                                    <CheckBox checked={true} color='black' 
                                     />
                                 </View>
                                 <View>
@@ -195,7 +209,7 @@ export default class NavStudent extends React.Component {
                             <View style={{ flexDirection: 'column' }}>
                             
                                 <View style={styles.checkboxes4} >
-                                    <CheckBox color='white'/>
+                                    <CheckBox checked={true} color='black'/>
                                     <Bar
                                  style={{ backgroundColor: '#76323f', marginLeft: 10, width: 230,marginTop:-10 }}
                                  title='CP1803'
@@ -209,7 +223,7 @@ export default class NavStudent extends React.Component {
                                 > 
                                 <View style={{ flexDirection: 'row',marginLeft:1}}>
                                 <View style={{  marginLeft:-10 ,marginTop:15}}>
-                                    <CheckBox color='white' 
+                                    <CheckBox checked={true} color='black' 
                                     />
                                 </View>
                                 <View>
@@ -222,7 +236,7 @@ export default class NavStudent extends React.Component {
 
                             <View style={{ flexDirection: 'row',marginLeft:1}}>
                                 <View style={{  marginLeft:-10 ,marginTop:15}}>
-                                    <CheckBox color='white' 
+                                    <CheckBox checked={true} color='black'
                                     />
                                 </View>
                                 <View>
@@ -235,7 +249,7 @@ export default class NavStudent extends React.Component {
 
                             <View style={{ flexDirection: 'row',marginLeft:1}}>
                                 <View style={{  marginLeft:-10 ,marginTop:15}}>
-                                    <CheckBox color='white' 
+                                    <CheckBox checked={true} color='black'
                                     />
                                 </View>
                                 <View>
@@ -248,7 +262,7 @@ export default class NavStudent extends React.Component {
 
                             <View style={{ flexDirection: 'row',marginLeft:1}}>
                                 <View style={{  marginLeft:-10 ,marginTop:15}}>
-                                    <CheckBox color='white' 
+                                    <CheckBox checked={true} color='black'
                                     />
                                 </View>
                                 <View>
@@ -267,7 +281,7 @@ export default class NavStudent extends React.Component {
                             <View style={{ flexDirection: 'column' }}>
                             
                                 <View style={styles.checkboxes4} >
-                                    <CheckBox color='white'/>
+                                    <CheckBox checked={true} color='black'/>
                                     <Bar
                                  style={{ backgroundColor: '#76323f', marginLeft: 10, width: 230,marginTop:-10 }}
                                  title='CP1850'
@@ -281,7 +295,7 @@ export default class NavStudent extends React.Component {
                                 > 
                                 <View style={{ flexDirection: 'row',marginLeft:1}}>
                                 <View style={{  marginLeft:-10 ,marginTop:15}}>
-                                    <CheckBox color='white' 
+                                    <CheckBox checked={true} color='black' 
                                     />
                                 </View>
                                 <View>
@@ -294,7 +308,7 @@ export default class NavStudent extends React.Component {
 
                             <View style={{ flexDirection: 'row',marginLeft:1}}>
                                 <View style={{  marginLeft:-10 ,marginTop:15}}>
-                                    <CheckBox color='white' 
+                                    <CheckBox checked={true} color='black'
                                     />
                                 </View>
                                 <View>
@@ -307,7 +321,7 @@ export default class NavStudent extends React.Component {
 
                             <View style={{ flexDirection: 'row',marginLeft:1}}>
                                 <View style={{  marginLeft:-10 ,marginTop:15}}>
-                                    <CheckBox color='white' 
+                                    <CheckBox checked={true} color='black'
                                     />
                                 </View>
                                 <View>
@@ -320,7 +334,7 @@ export default class NavStudent extends React.Component {
 
                             <View style={{ flexDirection: 'row',marginLeft:1}}>
                                 <View style={{  marginLeft:-10 ,marginTop:15}}>
-                                    <CheckBox color='white' 
+                                    <CheckBox checked={true} color='black' 
                                     />
                                 </View>
                                 <View>
@@ -336,13 +350,16 @@ export default class NavStudent extends React.Component {
                             </View>
                            
                         </ScrollView>
+                        
+                     </View>
+                     </Bar>
                     </View>
 
 
                     <Text style={styles.line}> </Text>
                     <View style={{ flexDirection: 'row', }}>
 
-                        <CheckBox style={styles.checkboxe2} color='white'
+                        <CheckBox style={styles.checkboxe2} checked={true} color='black'
                         />
                         <Bar
                             style={{ backgroundColor: '#76323f', marginLeft: 10, width: 230, marginTop: 20, }}
@@ -373,74 +390,44 @@ export default class NavStudent extends React.Component {
                                 >
                                     <View style={styles.checkboxes} >
                                         {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox color='white'
+                                        <CheckBox checked={true} color='black'
                                         />
                                         <Text style={styles.text1} > CP1801 </Text>
 
                                     </View>
                                     <View style={styles.checkboxes} >
                                         {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox color='white'
+                                        <CheckBox checked={true} color='black'
                                         />
                                         <Text style={styles.text1} > CP1820 </Text>
                                     </View>
                                     <View style={styles.checkboxes} >
                                         {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox color='white'
+                                        <CheckBox checked={true} color='black'
                                         />
                                         <Text style={styles.text1} > CP1803 </Text>
                                     </View>
                                     <View style={styles.checkboxes} >
                                         {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox color='white'
+                                        <CheckBox checked={true} color='black'
                                         />
                                         <Text style={styles.text1} > CP1850 </Text>
                                     </View>
                                 </ScrollView>
                             </View>
 
-
-
                         </Bar>
 
-
-
-
-
                     </View>
-
-
-
-
-
+                  
 
                 </View>
             </View>
+           
         );
     }
 }
 
-
-
-
-                        //       <Bar
-                        //             style={{ backgroundColor: '#76323f', marginLeft: 2, width: 230, marginTop: 10, }}
-                        //             collapsible={true}
-                        //             showOnStart={true}
-                        //             iconCollapsed='chevron-down'
-                        //             iconOpened='chevron-up'
-                        //             tintColor='white'
-                        //             iconSize={20}
-                        //         > 
-                        //   <View style={{ flexDirection: 'row', marginLeft: 2 }}>
-                        //             <CheckBox style={styles.checkboxe3} color='black'
-                        //             />
-
-                        //             <Image style={styles.image1} source={require('./panda.jpeg')} />
-                        //             <Text > Secation 1- Wagdi </Text>
-                        //             <Text > Secation 2- Wagdi </Text>
-                        //         </View> 
-                        //    </Bar> 
 
 
 const styles = StyleSheet.create({
@@ -551,8 +538,8 @@ const styles = StyleSheet.create({
 
     checkboxes4: {
         flexDirection: 'row',
-        marginLeft: 45,
-        marginTop: 30,
+        marginLeft: 8,
+        marginTop: 15,
     },
    
     checkboxe1: {
@@ -562,10 +549,10 @@ const styles = StyleSheet.create({
         padding: 1
     },
     checkboxe2: {
-
+        
         marginLeft: 18,
         marginTop: 30,
-        // padding: 1
+         padding: 1
     },
     checkboxe3: {
         marginRight: 10,
@@ -586,7 +573,7 @@ const styles = StyleSheet.create({
         padding: 5,
         width: 200,
         height: 50,
-        marginTop: 10,
+        marginTop: 10, 
         marginLeft: 15,
 
 
