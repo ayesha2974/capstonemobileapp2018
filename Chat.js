@@ -2,10 +2,10 @@ import { Text, TextInput, View, Alert, StyleSheet, TouchableOpacity, Image, Keyb
 import React from 'react';
 import { Constants } from 'expo';
 import ModalDropdown from 'react-native-modal-dropdown';
-import { Input, Icon, Item, Textarea } from "native-base";
+import { Input, Icon, Item, Textarea, Container } from "native-base";
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons'
 import Ionicons from 'react-native-vector-icons/Ionicons';
-
+import Bar from 'react-native-bar-collapsible';
 
 export default class Chat extends React.Component {
     handleScroll(event) {
@@ -34,7 +34,7 @@ export default class Chat extends React.Component {
                                     <View>
                                         <Image style={styles.image} source={require('./panda.jpeg')} />
                                     </View>
-                                    <View>
+                                    <View style={{ width: 70 }}>
                                         <Text style={styles.contactName}>Helen</Text>
                                     </View>
                                     <View>
@@ -46,8 +46,8 @@ export default class Chat extends React.Component {
                                     <View>
                                         <Image style={styles.image} source={require('./panda.jpeg')} />
                                     </View>
-                                    <View>
-                                        <Text style={styles.contactName}>Helen</Text>
+                                    <View style={{ width: 70 }}>
+                                        <Text style={styles.contactName}>Ayesha</Text>
                                     </View>
                                     <View>
                                         <View style={styles.status}>
@@ -58,8 +58,44 @@ export default class Chat extends React.Component {
                                     <View>
                                         <Image style={styles.image} source={require('./panda.jpeg')} />
                                     </View>
+                                    <View style={{ width: 70 }}>
+                                        <Text style={styles.contactName}>Menna</Text>
+                                    </View>
                                     <View>
-                                        <Text style={styles.contactName}>Helen</Text>
+                                        <View style={styles.status}>
+                                        </View>
+                                    </View>
+                                </View>
+                                <View style={styles.contacts}>
+                                    <View>
+                                        <Image style={styles.image} source={require('./panda.jpeg')} />
+                                    </View>
+                                    <View style={{ width: 70 }}>
+                                        <Text style={styles.contactName}>Nalin</Text>
+                                    </View>
+                                    <View>
+                                        <View style={styles.status}>
+                                        </View>
+                                    </View>
+                                </View>
+                                <View style={styles.contacts}>
+                                    <View>
+                                        <Image style={styles.image} source={require('./panda.jpeg')} />
+                                    </View>
+                                    <View style={{ width: 70 }}>
+                                        <Text style={styles.contactName}>Wagdi</Text>
+                                    </View>
+                                    <View>
+                                        <View style={styles.status}>
+                                        </View>
+                                    </View>
+                                </View>
+                                <View style={styles.contacts}>
+                                    <View>
+                                        <Image style={styles.image} source={require('./panda.jpeg')} />
+                                    </View>
+                                    <View style={{ width: 70 }}>
+                                        <Text style={styles.contactName}>Ali</Text>
                                     </View>
                                     <View>
                                         <View style={styles.status}>
@@ -71,41 +107,51 @@ export default class Chat extends React.Component {
                         <Text style={styles.line}> </Text>
 
                         <View style={{ margin: 10 }}>
-                            <Text style={styles.chatHead}>Group Chat</Text>
-                            <View style={{ height: 150 }}>
-                                <ScrollView>
-                                    <View style={styles.contacts}>
-                                        <View>
-                                            <Image style={styles.image} source={require('./panda.jpeg')} />
+                            {/* <Text style={styles.chatHead}>Group Chat</Text> */}
+                            <Bar
+                                style={{ backgroundColor: '#76323f', width: 370 }}
+                                title='Group Chat'
+                                titleStyle={{ fontSize: 24 }}
+                                collapsible={true}
+                                showOnStart={true}
+                                iconCollapsed='chevron-right'
+                                iconOpened='chevron-down'
+                                tintColor='white'
+                                iconSize={20}
+                            >
+                                <View style={{ height: 150 }}>
+                                    <ScrollView>
+                                        <View style={styles.contacts}>
+                                            <View>
+                                                <Image style={styles.image} source={require('./panda.jpeg')} />
+                                            </View>
+                                            <View>
+                                                <Text style={styles.contactName}>My Best Gp</Text>
+                                            </View>
                                         </View>
-                                        <View>
-                                            <Text style={styles.contactName}>Helen</Text>
+                                        <View style={styles.contacts}>
+                                            <View>
+                                                <Image style={styles.image} source={require('./b1.png')} />
+                                            </View>
+                                            <View>
+                                                <Text style={styles.contactName}>Cp1234 </Text>
+                                            </View>
                                         </View>
-
-                                    </View>
-                                    <View style={styles.contacts}>
-                                        <View>
-                                            <Image style={styles.image} source={require('./panda.jpeg')} />
+                                        <View style={styles.contacts}>
+                                            <View>
+                                                <Image style={styles.image} source={require('./panda.jpeg')} />
+                                            </View>
+                                            <View>
+                                                <Text style={styles.contactName}>Minions</Text>
+                                            </View>
                                         </View>
-                                        <View>
-                                            <Text style={styles.contactName}>Helen</Text>
-                                        </View>
-
-                                    </View>
-                                    <View style={styles.contacts}>
-                                        <View>
-                                            <Image style={styles.image} source={require('./panda.jpeg')} />
-                                        </View>
-                                        <View>
-                                            <Text style={styles.contactName}>Helen</Text>
-                                        </View>
-
-                                    </View>
-                                </ScrollView>
-                            </View>
+                                    </ScrollView>
+                                </View>
+                            </Bar>
                         </View>
+
                         <View style={styles.chatPage}>
-                            <View style={styles.contacts2}>
+                            <View style={styles.contact}>
                                 <View>
                                     <Image style={styles.image} source={require('./panda.jpeg')} />
                                 </View>
@@ -116,24 +162,52 @@ export default class Chat extends React.Component {
                                     <View style={styles.status2}>
                                     </View>
                                 </View>
-                            </View>
-                            <View style={styles.message}>
-                                <View style={}>
-                                    <View>
-                                        <Image style={styles.image} source={require('./panda.jpeg')} />
-                                    </View>
-                                    <View style={styles.msgFrom}>
-
-                                    </View>
-                                    
+                                <View style={{ marginTop: 15, marginRight: 20, marginLeft: 120 }}>
+                                    <Ionicons name="md-star-outline" size={30} style={{ color: '#FFD700', }} />
+                                </View>
+                                <View style={{ marginTop: 15, marginRight: 20 }}>
+                                    <Ionicons name="md-attach" size={30} style={{ color: '#76323f', }} />
+                                </View>
+                                <View style={{ marginTop: 15, marginRight: 20 }}>
+                                    <Ionicons name="md-close" size={30} style={{ color: '#76323f', }} />
                                 </View>
                             </View>
+                            <ScrollView>
+                                <View style={styles.message}>
+                                    <View style={{ flexDirection: 'row' }}>
+                                        <View>
+                                            <Image style={styles.image} source={require('./panda.jpeg')} />
+                                        </View>
+                                        <View style={styles.msgFrom}>
+                                            <View>
+                                                <Text style={{ fontSize: 16 }}>Hello, Where are you ??</Text>
+                                            </View>
+                                            <View>
+                                                <Text style={styles.msgFromTime}>11:00 PM</Text>
+                                            </View>
+                                        </View>
+                                    </View>
+                                    <View style={styles.msgToBox}>
+                                        <View>
+                                            <Image style={styles.image} source={require('./panda.jpeg')} />
+                                        </View>
+                                        <View style={styles.msgTo}>
+                                            <View>
+                                                <Text style={{ fontSize: 16 }}>Here !!</Text>
+                                            </View>
+                                            <View>
+                                                <Text style={styles.msgToTime}>11:20 PM</Text>
+                                            </View>
+                                        </View>
+                                    </View>
+                                </View>
+                            </ScrollView>
                             <View style={{ flexDirection: 'row', padding: 10 }}>
                                 <View>
                                     <SimpleLineIcons name="emotsmile" size={30} style={{ color: '#76323f', }} />
                                 </View>
                                 <View>
-                                    <Textarea placeholder="Enter Message" style={{ backgroundColor: 'white', width: 285, marginRight: 10, marginLeft: 10 }} />
+                                    <Textarea placeholder="Enter Message" style={styles.textArea} />
                                 </View>
                                 <View>
                                     <Ionicons name="md-send" size={30} style={{ color: '#76323f', }} />
@@ -179,7 +253,7 @@ const styles = StyleSheet.create({
     contacts: {
         flexDirection: 'row',
     },
-    contacts2: {
+    contact: {
         flexDirection: 'row',
         borderBottomWidth: 1,
         borderColor: '#76323f',
@@ -207,7 +281,7 @@ const styles = StyleSheet.create({
         height: 10,
         borderRadius: 5,
         backgroundColor: 'rgb(45, 233, 45)',
-        marginLeft: 230,
+        marginLeft: 210,
         marginTop: 25,
     },
     status2: {
@@ -241,9 +315,39 @@ const styles = StyleSheet.create({
 
     },
     msgFrom: {
-        width: 100,
-        height: 50,
-        backgroundColor:'#e9e9e9'
+        backgroundColor: '#e9e9e9',
+        flexDirection: 'column',
+        padding: 10,
+        borderRadius: 10,
+        marginTop: 10
+    },
+    msgFromTime: {
+        fontSize: 12,
+        alignSelf: 'flex-end',
+        color: '#696969'
+    },
+    msgTo: {
+        backgroundColor: '#d89aa8',
+        flexDirection: 'column',
+        padding: 10,
+        borderRadius: 10,
+        marginTop: 10
+    },
+    msgToTime: {
+        fontSize: 12,
+        alignSelf: 'flex-end',
+        color: '#696969'
+    },
+    msgToBox: {
+        flexDirection: 'row',
+        alignSelf: 'flex-end',
+        marginRight: 10
+    },
+    textArea: {
+        backgroundColor: 'white',
+        width: 285,
+        marginRight: 10,
+        marginLeft: 10
     }
 
 });

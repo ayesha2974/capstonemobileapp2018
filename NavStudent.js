@@ -3,22 +3,17 @@ import React from 'react';
 import { Constants } from 'expo';
 import { CheckBox, Item, Input, Icon } from 'native-base';
 import Bar from 'react-native-bar-collapsible';
-
-
 export default class NavStudent extends React.Component {
-
     state = { checked: true }
     render() {
-
         return (
             <View style={styles.container}>
                 <View style={styles.navbar}>
-
                     <View style={{ flexDirection: 'row' }}>
                         <View>
                             <Image style={styles.image} source={require('./panda.jpeg')} />
                         </View>
-                        <View style={styles.userBox}>
+                        <View style={{ marginTop: 25 }}>
                             <Text style={styles.text}>Student Name</Text>
                             <Text style={styles.text}>60087633</Text>
                             <TouchableOpacity>
@@ -29,21 +24,14 @@ export default class NavStudent extends React.Component {
                             </TouchableOpacity>
                         </View>
                     </View>
-
-
-
-
                     <Text style={styles.line}> </Text>
                     <View style={{ flexDirection: 'row' }}>
                         {/* <Icon style={styles.icon} name='square-o' > */}
-                        <CheckBox style={styles.checkboxe1} checked={this.state.allmoviechecked} color='black'
-                            onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
+                        <CheckBox style={styles.checkboxe1}  color='black'
+                            />
                         <Text style={styles.collaps1} > My Term Course </Text>
-
                         {/* </Icon> */}
                     </View>
-
-
                     <View style={{ height: 150 }}>
                         <ScrollView
                             horizontal={false}
@@ -52,95 +40,97 @@ export default class NavStudent extends React.Component {
                         >
                             <View style={styles.checkboxes} >
                                 {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                <CheckBox checked={this.state.allmoviechecked} color='black'
-                                    onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
+                                <CheckBox  color='black'
+                                    />
                                 <Text style={styles.text1} > CP1801 </Text>
                             </View>
                             <View style={styles.checkboxes} >
                                 {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                <CheckBox checked={this.state.allmoviechecked} color='black'
-                                    onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
+                                <CheckBox  color='black'
+                                    />
                                 <Text style={styles.text1} > CP1820 </Text>
                             </View>
                             <View style={styles.checkboxes} >
                                 {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                <CheckBox checked={this.state.allmoviechecked} color='black'
-                                    onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
+                                <CheckBox  color='black'
+                                    />
                                 <Text style={styles.text1} > CP1803 </Text>
                             </View>
                             <View style={styles.checkboxes} >
                                 {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                <CheckBox checked={this.state.allmoviechecked} color='black'
-                                    onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
+                                <CheckBox  color='black'
+                                    />
                                 <Text style={styles.text1} > CP1850 </Text>
                             </View>
                         </ScrollView>
                     </View>
-
-
                     <Text style={styles.line}> </Text>
-                    <View>
-                        <Icon style={styles.icon} name='square-o' >
-                            <Text style={styles.text} > My Term Course </Text>
-                        </Icon>
-
+                    <View style={{ flexDirection: 'row', }}>
+                        {/* <Icon style={styles.icon} name='square-o' > */}
+                        {/* <CheckBox style={styles.checkboxe1}  color='white'
+                            /> */}
+                        {/* <Text style={styles.collaps1} > My Previous Course </Text> */}
+                        {/* 
                     </View>
-
-
-
-                    <View>
-                        <Icon style={styles.arrow} name='arrows-v' />
-                        <Icon style={styles.icon1} name='square-o' >
-                            <Text style={styles.text1} > CP1801 </Text>
-                        </Icon>
-
-                        <Icon style={styles.icon2} name='square-o' >
-                            <Text style={styles.text1} > CP1820 </Text>
-                        </Icon>
-
-                        <Icon style={styles.icon2} name='square-o' >
-                            <Text style={styles.text1} > CP1803 </Text>
-                        </Icon>
-
-                        <Icon style={styles.icon2} name='square-o' >
-                            <Text style={styles.text1} > CP1850 </Text>
-                        </Icon>
-                    </View>
-                    <Text style={styles.line}> </Text>
-                    <View>
-                        <Icon style={styles.icon} name='square-o' >
-                            <Text style={styles.text} > My Term Course </Text>
-                        </Icon>
-
-                    </View>
-
-
-
-                    <View>
-                        <Icon style={styles.arrow} name='arrows-v' />
-                        <Icon style={styles.icon1} name='square-o' >
-                            <Text style={styles.text1} > CP1801 </Text>
-                        </Icon>
-
-                        <Icon style={styles.icon2} name='square-o' >
-                            <Text style={styles.text1} > CP1820 </Text>
-                        </Icon>
-
-                        <Icon style={styles.icon2} name='square-o' >
-                            <Text style={styles.text1} > CP1803 </Text>
-                        </Icon>
-
-                        <Icon style={styles.icon2} name='square-o' >
-                            <Text style={styles.text1} > CP1850 </Text>
-                        </Icon>
+                    <View> */}
+                        <CheckBox style={styles.checkboxe2}  color='black'
+                           />
+                        <Bar
+                            style={{ backgroundColor: '#76323f', marginLeft: 10, width: 230, marginTop: 20, }}
+                            title='My Previous Course'  
+                            titleStyle={{ fontSize: 18 }}
+                            collapsible={true}
+                            showOnStart={true}
+                            iconCollapsed='chevron-right'
+                            iconOpened='chevron-down'
+                            tintColor='white'
+                            iconSize={20}
+                        >
+                            <View>
+                                <Item rounded style={styles.searchBox}>
+                                    <Input underlineColorAndroid="transparent" />
+                                    <Icon active name='search' />
+                                </Item>
+                            </View>
+                            <View style={{ height: 150 }}>
+                                <ScrollView
+                                    horizontal={false}
+                                    pagingEnabled={false}
+                                    automaticallyAdjustInsets={true}
+                                >
+                                    <View style={styles.checkboxes} >
+                                        {/* <Icon style={styles.arrow} name='arrows-v' /> */}
+                                        <CheckBox  color='white'
+                                            />
+                                        <Text style={styles.text1} > CP1801 </Text>
+                                    </View>
+                                    <View style={styles.checkboxes} >
+                                        {/* <Icon style={styles.arrow} name='arrows-v' /> */}
+                                        <CheckBox  color='white'
+                                            />
+                                        <Text style={styles.text1} > CP1820 </Text>
+                                    </View>
+                                    <View style={styles.checkboxes} >
+                                        {/* <Icon style={styles.arrow} name='arrows-v' /> */}
+                                        <CheckBox  color='white'
+                                            />
+                                        <Text style={styles.text1} > CP1803 </Text>
+                                    </View>
+                                    <View style={styles.checkboxes} >
+                                        {/* <Icon style={styles.arrow} name='arrows-v' /> */}
+                                        <CheckBox  color='white'
+                                            />
+                                        <Text style={styles.text1} > CP1850 </Text>
+                                    </View>
+                                </ScrollView>
+                            </View>
+                        </Bar>
                     </View>
                 </View>
             </View>
         );
     }
 }
-
-
 const styles = StyleSheet.create({
     container: {
         width: '100%',
@@ -161,15 +151,9 @@ const styles = StyleSheet.create({
         margin: 10
     },
     text: {
-        // paddingTop: 10,
-        // paddingLeft: 15,
         fontSize: 18,
         letterSpacing: 1,
         color: 'white',
-
-    },
-    userBox: {
-        margin: 10
     },
     line: {
         borderBottomWidth: 1,
@@ -182,23 +166,18 @@ const styles = StyleSheet.create({
         fontSize: 30,
         marginLeft: 30,
         marginTop: 10,
-
     },
     text1: {
-
         paddingLeft: 15,
         fontSize: 18,
         color: 'white',
         textAlign: 'center',
-
     },
-
     icon1: {
         color: 'white',
         fontSize: 30,
         marginLeft: 60,
         marginTop: 30,
-
     },
     icon2: {
         color: 'white',
@@ -208,10 +187,8 @@ const styles = StyleSheet.create({
     arrow: {
         textAlign: 'right',
         fontSize: 50,
-        marginRight: 20
+        marginRight: 20,
     },
-
-
     collaps: {
         marginLeft: 10,
         fontSize: 18,
@@ -219,28 +196,24 @@ const styles = StyleSheet.create({
         color: 'white',
         marginTop: 15,
         padding: 10
-
     },
     checkboxes: {
         flexDirection: 'row',
         marginLeft: 45,
         marginTop: 15,
         padding: 1
-
-
     },
     checkboxe1: {
-
         marginLeft: 18,
         marginTop: 30,
         padding: 1
     },
     checkboxe2: {
-        
-                marginLeft: 18,
-                marginTop: 30,
-                // padding: 1
-            },
+
+        marginLeft: 18,
+        marginTop: 30,
+        // padding: 1
+    },
     collaps1: {
         marginLeft: 5,
         fontSize: 18,
@@ -248,7 +221,6 @@ const styles = StyleSheet.create({
         color: 'white',
         marginTop: 15,
         padding: 10
-
     },
     searchBox: {
         backgroundColor: 'white',
@@ -257,8 +229,5 @@ const styles = StyleSheet.create({
         height: 50,
         marginTop: 10,
         marginLeft: 15,
-
-
     },
-
 });

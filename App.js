@@ -7,7 +7,8 @@ import NavInstructor from './NavInstructor'
 import NavStudent from './NavStudent'
 // import Chat from './Chat'
 import AdminRegister from './AdminRegister'
-// import FacultyList from './FacultyList'
+import FacultyList from './FacultyList'
+import AdminProfile from './AdminProfile'
 import InstructorGradePage from './InstructorGradePage'
 import InstructorExam from './InstructorExam'
 // import StudentExam from './StudentExam'
@@ -19,8 +20,8 @@ export default class App extends React.Component {
         {/* <Login />  */}
         {/* <Reset/>  */}
         {/* <EnterPass /> */}
-        <NavInstructor />
-        {/* <NavStudent /> */}
+        {/* <NavInstructor /> */}
+        <NavStudent />
         {/* <Chat /> */}
         {/* <FacultyList/> */}
         {/* <AdminRegister /> */}

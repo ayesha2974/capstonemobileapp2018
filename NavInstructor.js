@@ -570,7 +570,6 @@ const styles = StyleSheet.create({
     checkboxe3: {
         marginRight: 10,
         // marginLeft: 3,
-
     },
     
     collaps1: {

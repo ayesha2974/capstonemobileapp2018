@@ -11,7 +11,6 @@ export default class Test2 extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            showToast: false,
             tableHead: [' Course  ', 'Type', 'Work', 'Start', 'Due', 'End', 'Submitted', 'New'],
             widthArr1: [96, 96, 96, 96, 96, 96, 96, 96],
 
@@ -168,8 +167,18 @@ export default class Test2 extends React.Component {
         return (
             <ScrollView style={styles.dataWrapper}>            
             <View style={{ paddingTop: 30 }}>
-                <Bar style={{ backgroundColor: 'white' }}  titleStyle={{ fontSize: 24 ,color:'black'}}  collapsible={true} showOnStart={true}
-                    iconCollapsed='chevron-right'  iconOpened='chevron-down'  tintColor='black' iconSize={20} title='Course Works ' >
+                <Bar style={{ backgroundColor: 'white' }}
+                    titleStyle={{ fontSize: 24 ,color:'black'}}
+                    collapsible={true}
+                    showOnStart={true}
+                    iconCollapsed='chevron-right'
+                    iconOpened='chevron-down'
+                    tintColor='white'
+                    iconSize={20}
+                    title='Course Works '
+
+
+                >
                     <View style={styles.tableone}>
                         <Table borderStyle={{ borderColor: 'white' }} >
                             <Row data={state.tableHead} widthArr={state.widthArr1} style={styles.header} textStyle={styles.htext} />
@@ -190,7 +199,7 @@ export default class Test2 extends React.Component {
                     showOnStart={true}
                     iconCollapsed='chevron-right'
                     iconOpened='chevron-down'
-                    tintColor='black'
+                    tintColor='white'
                     iconSize={20}
                     title='Work Submitted'
                 >
