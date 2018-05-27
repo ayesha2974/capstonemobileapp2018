@@ -18,11 +18,7 @@ export default class NavStudent extends React.Component {
                         <View>
                             <Image style={styles.image} source={require('./panda.jpeg')} />
                         </View>
-<<<<<<< HEAD
                         <View style={styles.userBox}>
-=======
-                        <View style={{ marginTop: 25 }}>
->>>>>>> a190c02d427ded015471475fdedab95be0d4f7f2
                             <Text style={styles.text}>Student Name</Text>
                             <Text style={styles.text}>60087633</Text>
                             <TouchableOpacity>
@@ -32,10 +28,6 @@ export default class NavStudent extends React.Component {
                                 <Text style={styles.text}>Logout</Text>
                             </TouchableOpacity>
                         </View>
-<<<<<<< HEAD
-
-=======
->>>>>>> a190c02d427ded015471475fdedab95be0d4f7f2
                     </View>
 
 
@@ -87,7 +79,6 @@ export default class NavStudent extends React.Component {
 
 
                     <Text style={styles.line}> </Text>
-<<<<<<< HEAD
                     <View>
                         <Icon style={styles.icon} name='square-o' >
                             <Text style={styles.text} > My Term Course </Text>
@@ -114,84 +105,6 @@ export default class NavStudent extends React.Component {
                         <Icon style={styles.icon2} name='square-o' >
                             <Text style={styles.text1} > CP1850 </Text>
                         </Icon>
-=======
-                    <View style={{ flexDirection: 'row', }}>
-                        {/* <Icon style={styles.icon} name='square-o' > */}
-                        {/* <CheckBox style={styles.checkboxe1} checked={this.state.allmoviechecked} color='white'
-                            onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} /> */}
-
-
-                        {/* <Text style={styles.collaps1} > My Previous Course </Text> */}
-
-
-{/* 
-                    </View>
-
-                    <View> */}
-                    <CheckBox style={styles.checkboxe2} checked={this.state.allmoviechecked} color='black'
-                            onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
-                        <Bar
-                        style={{ backgroundColor: '#76323f',marginLeft:10,width:230,marginTop:20,}}
-                            title='My Previous Course'
-                            collapsible={true}
-                            showOnStart={true}
-                            iconCollapsed='chevron-down'
-                            iconOpened='chevron-up'
-                            tintColor='white'
-                            iconSize={20}
-                             >
-
-
-
-                            <View>
-                                <Item rounded style={styles.searchBox}>
-                                    <Input underlineColorAndroid="transparent" />
-                                    <Icon active name='search' />
-                                </Item>
-                            </View>
-
-                            <View style={{ height: 150 }}>
-                                <ScrollView
-                                    horizontal={false}
-                                    pagingEnabled={false}
-                                    automaticallyAdjustInsets={true}
-                                >
-                                    <View style={styles.checkboxes} >
-                                        {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox checked={this.state.allmoviechecked} color='white'
-                                            onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
-                                        <Text style={styles.text1} > CP1801 </Text>
-                                    </View>
-                                    <View style={styles.checkboxes} >
-                                        {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox checked={this.state.allmoviechecked} color='white'
-                                            onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
-                                        <Text style={styles.text1} > CP1820 </Text>
-                                    </View>
-                                    <View style={styles.checkboxes} >
-                                        {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox checked={this.state.allmoviechecked} color='white'
-                                            onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
-                                        <Text style={styles.text1} > CP1803 </Text>
-                                    </View>
-                                    <View style={styles.checkboxes} >
-                                        {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox checked={this.state.allmoviechecked} color='white'
-                                            onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
-                                        <Text style={styles.text1} > CP1850 </Text>
-                                    </View>
-                                </ScrollView>
-                            </View>
-
-
-
-                        </Bar>
-
-
-
-
-
->>>>>>> a190c02d427ded015471475fdedab95be0d4f7f2
                     </View>
                     <Text style={styles.line}> </Text>
                     <View>
@@ -203,7 +116,6 @@ export default class NavStudent extends React.Component {
 
 
 
-<<<<<<< HEAD
                     <View>
                         <Icon style={styles.arrow} name='arrows-v' />
                         <Icon style={styles.icon1} name='square-o' >
@@ -222,13 +134,6 @@ export default class NavStudent extends React.Component {
                             <Text style={styles.text1} > CP1850 </Text>
                         </Icon>
                     </View>
-=======
-
-
-
-
-
->>>>>>> a190c02d427ded015471475fdedab95be0d4f7f2
                 </View>
             </View>
         );
@@ -256,18 +161,13 @@ const styles = StyleSheet.create({
         margin: 10
     },
     text: {
-<<<<<<< HEAD
         // paddingTop: 10,
         // paddingLeft: 15,
-=======
-
->>>>>>> a190c02d427ded015471475fdedab95be0d4f7f2
         fontSize: 18,
         letterSpacing: 1,
         color: 'white',
 
     },
-<<<<<<< HEAD
     userBox: {
         margin: 10
     },
@@ -284,21 +184,6 @@ const styles = StyleSheet.create({
         marginTop: 10,
 
     },
-=======
-    line: {
-        borderBottomWidth: 1,
-        borderColor: 'white',
-        marginLeft: 20,
-        marginRight: 30
-    },
-    icon: {
-        color: 'white',
-        fontSize: 30,
-        marginLeft: 30,
-        marginTop: 10,
-
-    },
->>>>>>> a190c02d427ded015471475fdedab95be0d4f7f2
     text1: {
 
         paddingLeft: 15,
@@ -314,7 +199,6 @@ const styles = StyleSheet.create({
         marginLeft: 60,
         marginTop: 30,
 
-<<<<<<< HEAD
     },
     icon2: {
         color: 'white',
@@ -326,20 +210,7 @@ const styles = StyleSheet.create({
         fontSize: 50,
         marginRight: 20
     }
-
-=======
-    },
-    icon2: {
-        color: 'white',
-        fontSize: 30,
-        marginLeft: 60,
-    },
-    arrow: {
-        textAlign: 'right',
-        fontSize: 50,
-        marginRight: 20,
-    },
->>>>>>> a190c02d427ded015471475fdedab95be0d4f7f2
+,
 
     collaps: {
         marginLeft: 10,

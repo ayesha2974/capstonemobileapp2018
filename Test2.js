@@ -173,7 +173,7 @@ export default class Test2 extends React.Component {
                     showOnStart={true}
                     iconCollapsed='chevron-right'
                     iconOpened='chevron-down'
-                    tintColor='black'
+                    tintColor='white'
                     iconSize={20}
                     title='Course Works '
 
@@ -199,7 +199,7 @@ export default class Test2 extends React.Component {
                     showOnStart={true}
                     iconCollapsed='chevron-right'
                     iconOpened='chevron-down'
-                    tintColor='black'
+                    tintColor='white'
                     iconSize={20}
                     title='Work Submitted'
                 >
