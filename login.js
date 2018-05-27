@@ -141,5 +141,16 @@ const styles = StyleSheet.create({
         paddingLeft:20,
 
     },
+    // buttons: {
+    //     marginTop: 20,
+    //     backgroundColor: "#fffaf0",
+    //     width: 80,
+    //     color: 'white',
+    //     justifyContent: 'center',
+    //     textAlign: 'center',
+    //     marginLeft: 60,
+    //     fontWeight: 'bold',
+    // },
+
 
 });
