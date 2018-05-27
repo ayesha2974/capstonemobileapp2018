@@ -5,13 +5,12 @@ import Reset from './Reset'
 import EnterPass from './EnterPass'
 import NavInstructor from './NavInstructor'
 import NavStudent from './NavStudent'
-import Chat from './Chat'
+// import Chat from './Chat'
 import AdminRegister from './AdminRegister'
 // import FacultyList from './FacultyList'
 import InstructorGradePage from './InstructorGradePage'
 import InstructorExam from './InstructorExam'
-import StudentExam from './StudentExam'
-import NavStudent from './NavStudent'
+// import StudentExam from './StudentExam'
 
 export default class App extends React.Component {
   render() {
@@ -20,19 +19,18 @@ export default class App extends React.Component {
         {/* <Login />  */}
         {/* <Reset/>  */}
         {/* <EnterPass /> */}
-        {/* <NavInstructor /> */}
+        <NavInstructor />
         {/* <NavStudent /> */}
         {/* <Chat /> */}
         {/* <FacultyList/> */}
         {/* <AdminRegister /> */}
         {/* <InstructorExam/> */}
         {/* {<InstructorGradePage/>} */}
-
         {/* <StudentExam /> */}
          {/* <Test /> */}
          {/* <Test2 />  */}
          {/* <Test3 /> */}
-         <AdminProfile/> 
+         {/* <AdminProfile/>  */}
       </View>
     );
   }
