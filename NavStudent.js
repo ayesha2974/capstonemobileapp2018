@@ -149,50 +149,6 @@ export default class NavStudent extends React.Component {
                                     <Icon active name='search' />
                                 </Item>
                             </View>
-
-                            <View style={{ height: 150 }}>
-                                <ScrollView
-                                    horizontal={false}
-                                    pagingEnabled={false}
-                                    automaticallyAdjustInsets={true}
-                                >
-                                    <View style={styles.checkboxes} >
-                                        {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox checked={this.state.allmoviechecked} color='white'
-                                            onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
-                                        <Text style={styles.text1} > CP1801 </Text>
-                                    </View>
-                                    <View style={styles.checkboxes} >
-                                        {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox checked={this.state.allmoviechecked} color='white'
-                                            onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
-                                        <Text style={styles.text1} > CP1820 </Text>
-                                    </View>
-                                    <View style={styles.checkboxes} >
-                                        {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox checked={this.state.allmoviechecked} color='white'
-                                            onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
-                                        <Text style={styles.text1} > CP1803 </Text>
-                                    </View>
-                                    <View style={styles.checkboxes} >
-                                        {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox checked={this.state.allmoviechecked} color='white'
-                                            onPress={() => this.setState({ allmoviechecked: true, futuremoviechecked: false, watchedmoviechecked: false })} />
-                                        <Text style={styles.text1} > CP1850 </Text>
-                                    </View>
-                                </ScrollView>
-                            </View>
-
-
-
-                        </Bar>
-
-
-
-
-
->>>>>>> a190c02d427ded015471475fdedab95be0d4f7f2
-                    </View>
                     <Text style={styles.line}> </Text>
                     <View>
                         <Icon style={styles.icon} name='square-o' >
