@@ -27,8 +27,8 @@ export default class NavStudent extends React.Component {
                     <Text style={styles.line}> </Text>
                     <View style={{ flexDirection: 'row' }}>
                         {/* <Icon style={styles.icon} name='square-o' > */}
-                        <CheckBox style={styles.checkboxe1}  color='black'
-                            />
+                        <CheckBox style={styles.checkboxe1} color='black'
+                        />
                         <Text style={styles.collaps1} > My Term Course </Text>
                         {/* </Icon> */}
                     </View>
@@ -40,26 +40,26 @@ export default class NavStudent extends React.Component {
                         >
                             <View style={styles.checkboxes} >
                                 {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                <CheckBox  color='black'
-                                    />
+                                <CheckBox color='black'
+                                />
                                 <Text style={styles.text1} > CP1801 </Text>
                             </View>
                             <View style={styles.checkboxes} >
                                 {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                <CheckBox  color='black'
-                                    />
+                                <CheckBox color='black'
+                                />
                                 <Text style={styles.text1} > CP1820 </Text>
                             </View>
                             <View style={styles.checkboxes} >
                                 {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                <CheckBox  color='black'
-                                    />
+                                <CheckBox color='black'
+                                />
                                 <Text style={styles.text1} > CP1803 </Text>
                             </View>
                             <View style={styles.checkboxes} >
                                 {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                <CheckBox  color='black'
-                                    />
+                                <CheckBox color='black'
+                                />
                                 <Text style={styles.text1} > CP1850 </Text>
                             </View>
                         </ScrollView>
@@ -73,11 +73,11 @@ export default class NavStudent extends React.Component {
                         {/* 
                     </View>
                     <View> */}
-                        <CheckBox style={styles.checkboxe2}  color='black'
-                           />
+                        <CheckBox style={styles.checkboxe2} color='black'
+                        />
                         <Bar
                             style={{ backgroundColor: '#76323f', marginLeft: 10, width: 230, marginTop: 20, }}
-                            title='My Previous Course'  
+                            title='My Previous Course'
                             titleStyle={{ fontSize: 18 }}
                             collapsible={true}
                             showOnStart={true}
@@ -92,38 +92,40 @@ export default class NavStudent extends React.Component {
                                     <Icon active name='search' />
                                 </Item>
                             </View>
-                            <View style={{ height: 150 }}>
-                                <ScrollView
-                                    horizontal={false}
-                                    pagingEnabled={false}
-                                    automaticallyAdjustInsets={true}
-                                >
+                            <ScrollView
+                                horizontal={false}
+                                pagingEnabled={false}
+                                automaticallyAdjustInsets={true}
+                            >
+                                <View style={{ height: 150 }}>
+
                                     <View style={styles.checkboxes} >
                                         {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox  color='white'
-                                            />
+                                        <CheckBox color='white'
+                                        />
                                         <Text style={styles.text1} > CP1801 </Text>
                                     </View>
                                     <View style={styles.checkboxes} >
                                         {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox  color='white'
-                                            />
+                                        <CheckBox color='white'
+                                        />
                                         <Text style={styles.text1} > CP1820 </Text>
                                     </View>
                                     <View style={styles.checkboxes} >
                                         {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox  color='white'
-                                            />
+                                        <CheckBox color='white'
+                                        />
                                         <Text style={styles.text1} > CP1803 </Text>
                                     </View>
                                     <View style={styles.checkboxes} >
                                         {/* <Icon style={styles.arrow} name='arrows-v' /> */}
-                                        <CheckBox  color='white'
-                                            />
+                                        <CheckBox color='white'
+                                        />
                                         <Text style={styles.text1} > CP1850 </Text>
                                     </View>
-                                </ScrollView>
-                            </View>
+
+                                </View>
+                            </ScrollView>
                         </Bar>
                     </View>
                 </View>
