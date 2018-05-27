@@ -90,7 +90,7 @@ export default class NavStudent extends React.Component {
                            />
                         <Bar
                             style={{ backgroundColor: '#76323f', marginLeft: 10, width: 230, marginTop: 20, }}
-                            title='My Previous Course'  
+                            title='My Previous Course'
                             titleStyle={{ fontSize: 18 }}
                             collapsible={true}
                             showOnStart={true}
@@ -105,12 +105,13 @@ export default class NavStudent extends React.Component {
                                     <Icon active name='search' />
                                 </Item>
                             </View>
-                            <View style={{ height: 150 }}>
-                                <ScrollView
-                                    horizontal={false}
-                                    pagingEnabled={false}
-                                    automaticallyAdjustInsets={true}
-                                >
+                            <ScrollView
+                                horizontal={false}
+                                pagingEnabled={false}
+                                automaticallyAdjustInsets={true}
+                            >
+                                <View style={{ height: 150 }}>
+
                                     <View style={styles.checkboxes} >
                                         {/* <Icon style={styles.arrow} name='arrows-v' /> */}
                                         <CheckBox checked={true} color='black'
@@ -135,8 +136,9 @@ export default class NavStudent extends React.Component {
                                             />
                                         <Text style={styles.text1} > CP1850 </Text>
                                     </View>
-                                </ScrollView>
-                            </View>
+
+                                </View>
+                            </ScrollView>///gfjogkogiiiogfiujigoigjij
                         </Bar>
                     </View>
                 </View>
