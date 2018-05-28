@@ -1,336 +1,201 @@
-
-import React, { Component } from 'react';
-import { Container, Header, Content, Button, Form, Item, Left, Right, Input, Body, Titl, List, ListItem } from 'native-base';
-import { AppRegistry, Text, CheckBox, TextInput, View, Alert, StyleSheet, TouchableOpacity, Image, KeyboardAvoidingView, Linking, ScrollView } from 'react-native';
-import { Table, TableWrapper, Row, Rows, Col, Cols, Cell } from 'react-native-table-component';
-import InstructorGradePage from './InstructorGradePage';
-import Bar from 'react-native-bar-collapsible';
-
-
-export default class Test2 extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            showToast: false,
-            tableHead: [' Course  ', 'Type', 'Work', 'Start', 'Due', 'End', 'Submitted', 'New'],
-            widthArr1: [96, 96, 96, 96, 96, 96, 96, 96],
-
-            tableData: [
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Lab', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
+import { TextInput, View, Alert, StyleSheet, TouchableOpacity, Image, KeyboardAvoidingView, Linking, ScrollView } from 'react-native';
+import React from 'react';
+import { Container, Header, Content, Form, Item, Input, Label, Button } from 'native-base';
+import Instructor_HomePage from './Instructor_Homepage'
+import NavInstructor from './NavInstructor'
+import Chat from './Chat'
+import Entypo from 'react-native-vector-icons/Entypo'
 
 
-            ],
+export default class Instructor extends React.Component {
+
+    state = {
+        rightButton: 'chat-button',
+        leftButton: 'nav-button',
+        screen: window.innerWidth,
+        activeIndex: 0,
+        open: false,
+        changeClass: window.innerWidth >= 500 ? "container-instructor-full" : "container-instructor-both",
+        expandRight: false,
+        iconRight: false ? <Entypo name="chevron-right" size={30} style={{ color: '#76323f', }} /> : <Entypo name="chevron-left" size={30} style={{ color: '#76323f', }} />,
+        expandLeft: false,
+        iconLeft: false ? <Entypo name="chevron-left" size={30} style={{ color: '#76323f', }} /> : <Entypo name="chevron-right" size={30} style={{ color: '#76323f', }} />,
+        cal: 0
+    }
+    //    <Ionicons name="md-send" size={30} style={{ color: '#76323f', }} />
 
 
-            tableHead2: [' Name ', 'Student Id', 'Time', 'Files', 'Work Grade', 'Course Grade', 'GPA'],
-            widthArr2: [109.5, 109.5, 109.5, 109.5, 109.5, 109.5, 109.5],
+    handleClick = (e, titleProps) => {
+        const { index } = titleProps
+        const { activeIndex } = this.state
+        const newIndex = activeIndex === index ? -1 : index
+
+        this.setState({ activeIndex: newIndex })
+    }
+    handleChange = (e, { value }) => this.setState({ value })
+    handleChange2 = (e, { value2 }) => this.setState({ value2 })
+    handleChange3 = (e, { value3 }) => this.setState({ value3 })
+
+    toggleVisibility = () => this.setState({ visible: !this.state.visible })
 
 
-            tableData2: [
-                ['Aya', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Maya', '6002', 'Sep 10 12:20', '1', '40 60%', '60/60 100%', '4.0'],
-                ['Zara', '6010', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '1.3'],
-                ['Farah', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '3.3'],
-                ['Aya', '6002', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Aliya', '6025', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.9'],
-                ['Aya', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Maya', '6002', 'Sep 10 12:20', '1', '40 60%', '60/60 100%', '4.0'],
-                ['Zara', '6010', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '1.3'],
-                ['Farah', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '3.3'],
-                ['Aya', '6002', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Aliya', '6025', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.9'],
-                ['Aya', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Maya', '6002', 'Sep 10 12:20', '1', '40 60%', '60/60 100%', '4.0'],
-                ['Zara', '6010', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '1.3'],
-                ['Farah', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '3.3'],
-                ['Aya', '6002', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Aliya', '6025', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.9'],
-                ['Aya', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Maya', '6002', 'Sep 10 12:20', '1', '40 60%', '60/60 100%', '4.0'],
-                ['Zara', '6010', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '1.3'],
-                ['Farah', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '3.3'],
-                ['Aya', '6002', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Aliya', '6025', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.9'],
-                ['Aya', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Maya', '6002', 'Sep 10 12:20', '1', '40 60%', '60/60 100%', '4.0'],
-                ['Zara', '6010', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '1.3'],
-                ['Farah', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '3.3'],
-                ['Aya', '6002', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Aliya', '6025', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.9'],
-                ['Aya', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Maya', '6002', 'Sep 10 12:20', '1', '40 60%', '60/60 100%', '4.0'],
-                ['Zara', '6010', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '1.3'],
-                ['Farah', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '3.3'],
-                ['Aya', '6002', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Aliya', '6025', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.9'],
-                ['Aya', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Maya', '6002', 'Sep 10 12:20', '1', '40 60%', '60/60 100%', '4.0'],
-                ['Zara', '6010', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '1.3'],
-                ['Farah', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '3.3'],
-                ['Aya', '6002', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Aliya', '6025', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.9'],
-                ['Aya', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Maya', '6002', 'Sep 10 12:20', '1', '40 60%', '60/60 100%', '4.0'],
-                ['Zara', '6010', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '1.3'],
-                ['Farah', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '3.3'],
-                ['Aya', '6002', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Aliya', '6025', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.9'],
-                ['Aya', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Maya', '6002', 'Sep 10 12:20', '1', '40 60%', '60/60 100%', '4.0'],
-                ['Zara', '6010', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '1.3'],
-                ['Farah', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '3.3'],
-                ['Aya', '6002', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Aliya', '6025', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.9'],
-                ['Aya', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Maya', '6002', 'Sep 10 12:20', '1', '40 60%', '60/60 100%', '4.0'],
-                ['Zara', '6010', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '1.3'],
-                ['Farah', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '3.3'],
-                ['Aya', '6002', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Aliya', '6025', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.9'],
-                ['Aya', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Maya', '6002', 'Sep 10 12:20', '1', '40 60%', '60/60 100%', '4.0'],
-                ['Zara', '6010', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '1.3'],
-                ['Farah', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '3.3'],
-                ['Aya', '6002', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Aliya', '6025', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.9'],
-                ['Aya', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Maya', '6002', 'Sep 10 12:20', '1', '40 60%', '60/60 100%', '4.0'],
-                ['Zara', '6010', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '1.3'],
-                ['Farah', '6005', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '3.3'],
-                ['Aya', '6002', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.3'],
-                ['Aliya', '6025', 'Sep 10 16:20', '5', '30 60%', '60/60 100%', '2.9'],
+    handleSize = () => {
+        // console.log('resize',window.innerWidth)
+        window.innerWidth <= 800 ?
+            this.setState(
+                {
+                    screen: window.innerWidth,
+                    changeClass: "container-instructor-full",
+                    expandRight: false,
+                    expandLeft: false,
+                    rightButton: 'chat-button',
+                    leftButton: 'nav-button',
+                    cal: window.innerWidth + 305
+                }
+            )
+            : null
+    }
+    handleExpandRight = () => {
+        let right = !this.state.expandRight
+        console.log('right:', right, this.state.expandLeft, this.state.expandRight)
+        this.setState(
+            {
+                changeClass:
+                    this.state.expandLeft && right ?
+                        "container-instructor-both" :
+                        !this.state.expandLeft && !right ?
+                            "container-instructor-full" :
+                            !this.state.expandLeft && right ?
+                                "container-instructor-right" :
+                                this.state.expandLeft && !right ?
+                                    "container-instructor-left" :
+                                    "container-instructor-both2",
+                rightButton:
+                    this.state.expandLeft && right ?
+                        "chat-button-open" :
+                        !this.state.expandLeft && !right ?
+                            "chat-button" :
+                            !this.state.expandLeft && right ?
+                                "chat-button-open" :
+                                this.state.expandLeft && !right ?
+                                    "chat-button" :
+                                    "chat-button",
 
-            ]
+                leftButton:
+                    this.state.expandLeft && right ?
+                        "nav-button-open" :
+                        !this.state.expandLeft && !right ?
+                            "nav-button" :
+                            this.state.expandLeft && !right ?
+                                "nav-button-open" :
+                                !this.state.expandLeft && right ?
+                                    "nav-button" :
+                                    "nav-button",
+                expandRight: right,
+                iconRight: !this.state.expandRight ? <Entypo name="chevron-right" size={30} style={{ color: '#76323f', }} /> : <Entypo name="chevron-left" size={30} style={{ color: '#76323f', }} />
+            }
+        )
+    }
+    handleExpandLeft = () => {
+        let left = !this.state.expandLeft
+
+        console.log('left:', left, this.state.expandLeft, this.state.expandRight)
+        console.log('left:', left)
+        this.setState(
+            {
+                changeClass:
+                    left && this.state.expandRight ?
+                        "container-instructor-both" :
+                        !left && !this.state.expandRight ?
+                            "container-instructor-full" :
+                            left && !this.state.expandRight ?
+                                "container-instructor-left" :
+                                !left && this.state.expandRight ?
+                                    "container-instructor-right" :
+                                    "container-instructor-both2",
+                rightButton:
+                    left && this.state.expandRight ?
+                        "chat-button-open" :
+                        !left && !this.state.expandRight ?
+                            "chat-button" :
+                            left && !this.state.expandRight ?
+                                "chat-button" :
+                                !left && this.state.expandRight ?
+                                    "chat-button-open" :
+                                    "chat-button",
+                leftButton:
+                    left && this.state.expandRight ?
+                        "nav-button-open" :
+                        !left && !this.state.expandRight ?
+                            "nav-button" :
+                            left && !this.state.expandRight ?
+                                "nav-button-open" :
+                                !left && this.state.expandRight ?
+                                    "nav-button" :
+                                    "nav-button",
+                expandLeft: left,
+                iconLeft: !this.state.expandLeft ? <Entypo name="chevron-left" size={30} style={{ color: '#76323f', }} /> : <Entypo name="chevron-right" size={30} style={{ color: '#76323f', }} />
+            }
+        )
+    }
+    // handleClick2 = () => this.setState({ open: !this.state.open })
+
+    handleClose = () => this.setState({ open: false })
+    handlesss = () => {
+        return {
+            backgroundColor: 'pink',
+            width: "100%",
+            height: "100%",
+            alignItems: 'center',
+            justifyContent: 'center',
         }
     }
+
     render() {
-        const state = this.state;
 
         return (
-            <ScrollView style={styles.dataWrapper}>            
-            <View style={{ paddingTop: 30 }}>
-                <Bar style={{ backgroundColor: 'white' }}  titleStyle={{ fontSize: 24 ,color:'black'}}  collapsible={true} showOnStart={true}
-                    iconCollapsed='chevron-right'  iconOpened='chevron-down'  tintColor='black' iconSize={20} title='Course Works ' >
-                    <View style={styles.tableone}>
-                        <Table borderStyle={{ borderColor: 'white' }} >
-                            <Row data={state.tableHead} widthArr={state.widthArr1} style={styles.header} textStyle={styles.htext} />
-                        </Table>
-                        <ScrollView style={styles.dataWrapper2}>
-                            <Table borderStyle={{ borderColor: 'white'}}>
-                                {
-                                    <Rows widthArr={state.widthArr1} data={state.tableData} style={styles.row}
-                                        textStyle={styles.text} />
-                                }
-                            </Table>
-                        </ScrollView>
+            <View style={container}>
+                {
+                    // this.state.screen >= 500
+                    this.state.expandLeft//&&window.innerWidth>=305// collapsses when width is small
+                        ?
+                        <NavInstructor />
+                        :
+                        <View></View>
+                }
+                <View class={this.state.changeClass}>
+                    <View class={this.state.leftButton} uk-icon={this.state.iconLeft} onClick={() => this.handleExpandLeft()}>
                     </View>
-                </Bar>
-                <Bar style={{ backgroundColor: 'white' }}
-                    titleStyle={{ fontSize: 24 ,color:'black'}}
-                    collapsible={true}
-                    showOnStart={true}
-                    iconCollapsed='chevron-right'
-                    iconOpened='chevron-down'
-                    tintColor='black'
-                    iconSize={20}
-                    title='Work Submitted'
-                >
-
-                    <View style={styles.tableone}>
-                        <View style={{ flexDirection: 'column' }}>
-                            <View style={{ flexDirection: 'row' }}>
-                                <CheckBox
-                                    value={this.state.checked}
-                                    onValueChange={() => this.setState({ checked: !this.state.checked })}
-                                />
-                                <Text style={{ marginTop: 5 }}>Show All Students</Text>
-                            </View>
-                        </View>
-                        <Table borderStyle={{ borderColor: 'white' }} >
-                            <Row data={state.tableHead2} widthArr={state.widthArr2} style={styles.header} textStyle={styles.htext} />
-                        </Table>
-                        <ScrollView style={styles.dataWrapper2}>
-                            <Table borderStyle={{ borderColor: 'white' }} >
-                                {
-                                    <Rows widthArr={state.widthArr2} data={state.tableData2} style={styles.row}
-                                        textStyle={styles.text} />
-                                }
-                            </Table>
-                        </ScrollView>
-
+                    <Instructor_HomePage />
+                    <View class={this.state.rightButton}
+                        uk-icon={this.state.iconRight}
+                        onClick={() => this.handleExpandRight()}>
                     </View>
-                </Bar>
-                <View  >
-                        <InstructorGradePage />
-
-                    </View>
-
+                </View>
+                {
+                    this.state.expandRight
+                        ?
+                        <Chat />
+                        :
+                        <View></View>
+                }
             </View>
-              </ScrollView>
+
+
         );
     }
 }
+
+
 const styles = StyleSheet.create({
     container: {
-        paddingTop: 50,
-        paddingBottom: 100,
-        // backgroundColor: 'yellow',
-        width: "100%",
-        height: "100%",
         backgroundColor: 'white',
-        alignItems: 'center',
-    },
-    container2: {
-        paddingTop: 50,
-        paddingBottom: 100,
-        // backgroundColor: 'olive',
         width: "100%",
         height: "100%",
         alignItems: 'center',
-    },
-    header: {
-        height: 50,
-        backgroundColor: '#76323f',
-        width: "100%"
-    },
-    htext: {
-        fontWeight: 'bold',
-        alignSelf: "center",
-        color: 'white'
-    },
-    text: {
-        textAlign: 'center',
-    },
-
-
-    dataWrapper: {
-        marginTop: -1
-    },
-    dataWrapper2: {
-        marginTop: -1,
-        height: 100,
-    },
-    row: {
-        alignItems: 'center',
-        alignSelf: "center",
         justifyContent: 'center',
-
-    },
-    tableone: {
-        paddingTop:7,
-        paddingBottom:7,
-        borderColor: '#E9E9E9',
-        borderBottomWidth: 1.5,
-        alignItems: 'center',
-    },
-    tabletwo: {
-        borderColor: '#E9E9E9',
-        borderBottomWidth: 1.5,
-        //  alignItems: 'center',
     },
 
-    header2: {
-        fontWeight: 'bold',
-        color: 'black',
-        paddingBottom: 10,
-        fontSize: 20,
-        justifyContent: 'space-between'
-    },
-    inputfeilds: {
-        textAlign: 'center',
-        backgroundColor: 'white',
-        height: 40,
-        borderColor: '#c2c2c2',
-        borderRadius: 4,
-        borderWidth: 1.5,
-        width: 100,
-        color: '#f9f9f9',
-        marginLeft: 10,
 
-    },
 
-    workdetails: {
-        height: "100%",
-        flex: 1,
-        alignItems: 'flex-start',
-        paddingTop: 30,
-        flexDirection: 'column',
-        paddingRight: 300,
-        paddingLeft: 220,
-    },
-    workdetail_H: {
-        height: "100%",
-        flex: 1,
-        alignItems: 'flex-start',
-        paddingTop: 30,
-        flexDirection: 'row',
-        paddingRight: 300,
-        paddingLeft: 500,
-    },
-
-    // barstyle:{
-    //     backgroundColor: '#E9E9E9',
-    //     fontWeight: 'bold',
-    //     color: 'white'
-    // }
 });
-
