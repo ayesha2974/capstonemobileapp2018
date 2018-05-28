@@ -154,7 +154,7 @@ export default class Instructor extends React.Component {
     render() {
 
         return (
-            <View style={container}>
+            <View style={styles.container}>
                 {
                     // this.state.screen >= 500
                     this.state.expandLeft//&&window.innerWidth>=305// collapsses when width is small
@@ -189,6 +189,13 @@ export default class Instructor extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
+        backgroundColor: 'white',
+        width: "100%",
+        height: "100%",
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    container1: {
         backgroundColor: 'white',
         width: "100%",
         height: "100%",
