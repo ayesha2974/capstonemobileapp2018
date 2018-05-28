@@ -31,12 +31,12 @@ export default class App extends React.Component {
         {/* <InstructorExam/> */}
         {/* {<InstructorGradePage/>} */}
         {/* <StudentExam /> */}
-         {/* <Test /> */}
-         {/* <Test2 />  */}
-         {/* <Test3 /> */}
-       {/* <AdminProfile/>  */}
-         {/* <InstructorProfile/>  */}
-         <StudentProfile/>  
+        {/* <Test /> */}
+        {/* <Test2 />  */}
+        {/* <Test3 /> */}
+        {/* <AdminProfile/>  */}
+        {/* <InstructorProfile/>  */}
+        {/* <StudentProfile/>   */}
       </View>
     );
   }
