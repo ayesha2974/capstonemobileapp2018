@@ -15,8 +15,9 @@ import Instructor from './Instructor'
 // import StudentExam from './StudentExam'
 import InstructorProfile from './InstructorProfile'
 import StudentProfile from './StudentProfile'
-
-
+import Instructor_Homepage from './Instructor_Homepage'
+import Student_Homepage from './Student_Homepage'
+import Instructor from './Instructor'
 export default class App extends React.Component {
   render() {
     return (
@@ -28,6 +29,9 @@ export default class App extends React.Component {
         {/* {<NavStudent />} */}
         {/* <Chat /> */}
         {/* <FacultyList/> */}
+        {/* <Instructor_Homepage/> */}
+        {/* <Student_Homepage /> */}
+        {/* <Instructor /> */}
         {/* <AdminRegister /> */}
         {/* <InstructorExam/> */}
         {/* {<InstructorGradePage/>} */}

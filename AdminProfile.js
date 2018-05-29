@@ -305,6 +305,13 @@ const styles = StyleSheet.create({
         marginTop: 5,
         fontSize: 18,
         color: "#76323f"
-    }
+    },
+    // imglabel: {
+    //     marginLeft: 155,
+    //     marginBottom: 25,
+    //     marginTop: 5,
+    //     fontSize: 18,
+    //     color: "#76323f"
+    // }
 
 })
