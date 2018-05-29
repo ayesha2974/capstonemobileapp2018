@@ -8,8 +8,18 @@ import p1 from './Images/p1.png';
 
 
 export default class Test2 extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+
+        }
+    }
     render() {
+
+        const state = this.state;
+       
         return (
+
             <ScrollView>
                 <View style={styles.container}>
 
@@ -127,7 +137,6 @@ export default class Test2 extends React.Component {
                                 <Text style={styles.checkboxText}>I agree with the terms and conditions</Text>
                             </View>
 
-
                             {/* <ModalDropdown
                             style={styles.dropdowns}
                             options={['Instructor', 'Admin']}
@@ -135,6 +144,7 @@ export default class Test2 extends React.Component {
                             dropdownTextStyle={{ fontSize: 20 }}
                         /> */}
                         </View>
+
                     </Bar>
                     <Bar style={styles.bar}
                         title='SET UP'
@@ -187,13 +197,17 @@ export default class Test2 extends React.Component {
 const styles = StyleSheet.create({
     container: {
         backgroundColor: 'white',
-        paddingTop: 23
+        paddingTop: 23,
+        height: 1200
     },
     bar: {
-        backgroundColor: '#76323f'
+        backgroundColor: '#76323f',
+
     },
     checkbox: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
     checkboxText: {
         marginLeft: 5,
@@ -201,42 +215,56 @@ const styles = StyleSheet.create({
     },
 
     profileContainer: {
-        marginLeft: 180,
+        // marginLeft: 180,
         marginTop: 20,
-        marginBottom: 20
+        marginBottom: 20,
+        alignItems: 'center',
+        justifyContent: 'center',
     },
     policyContainer: {
-        marginLeft: 218,
+        // marginLeft: 218,
         marginTop: 20,
-        marginBottom: 20
+        marginBottom: 20,
+        alignItems: 'center',
+        justifyContent: 'center',
     },
     auditContainer: {
-        marginLeft: 218,
-        marginTop: 20
+        // marginLeft: 218,
+        marginTop: 20,
+        alignItems: 'center',
+        justifyContent: 'center',
     },
     setupContiner: {
-        marginLeft: 218,
-        marginTop: 20
+        // marginLeft: 218,
+        marginTop: 20,
+        alignItems: 'center',
+        justifyContent: 'center',
     },
     inline: {
         flexDirection: 'row',
         width: '15%',
-        marginRight: 640,
-        marginLeft: 20
-      
+        // marginRight: 640,
+        // marginLeft: 20
+        alignItems: 'center',
+        justifyContent: 'center',
+
     },
     titles: {
         marginTop: 10,
         fontSize: 18,
         fontWeight: 'bold',
-        marginLeft: 7,
+        // marginLeft: 7,
+        alignItems: 'center',
+        justifyContent: 'center',
         height: 40
     },
     inputfeilds: {
         backgroundColor: '#e9e9e9',
         height: 40,
         width: 200,
-        marginLeft: 1
+        marginLeft: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
     },
     nametxtview: {
         marginLeft: 20
@@ -253,19 +281,19 @@ const styles = StyleSheet.create({
     button: {
         alignItems: 'center',
         backgroundColor: "#76323f",
-        padding: 10,
+        // padding: 10,
         marginTop: 10,
         width: 100,
         borderRadius: 35,
-        marginLeft: 320,
+        // marginLeft: 320,
         height: 40,
-        marginBottom: 10
+        // marginBottom: 10,
+        justifyContent: 'center',
     },
 
     buttonsText: {
         color: 'white',
         fontSize: 15,
-        paddingBottom: 13
     },
     checkboxView: {
         marginLeft: 200,
@@ -295,12 +323,16 @@ const styles = StyleSheet.create({
     },
     img: {
         borderRadius: 150,
-        marginLeft: 130,
+        // marginLeft: 130,
+        alignItems: 'center',
+        justifyContent: 'center',
         height: 130,
         width: 130
     },
     imglabel: {
-        marginLeft: 155,
+        // marginLeft: 155,
+        alignItems: 'center',
+        justifyContent: 'center',
         marginBottom: 25,
         marginTop: 5,
         fontSize: 18,
