@@ -10,9 +10,11 @@ export default class NavStudent extends React.Component {
             <View style={styles.container}>
                 <View style={styles.navbar}>
                     <View style={{ flexDirection: 'row' }}>
-                        <View>
-                            <Image style={styles.image} source={require('./panda.jpeg')} />
-                        </View>
+                    <TouchableOpacity>
+                    <View>
+                       <Image style={styles.image} source={require('./panda.jpeg')} />
+                   </View>
+               </TouchableOpacity>
                         <View style={{ marginTop: 25 }}>
                             <Text style={styles.text}>Student Name</Text>
                             <Text style={styles.text}>60087633</Text>

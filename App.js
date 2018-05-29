@@ -17,6 +17,9 @@ import StudentProfile from './StudentProfile'
 import Instructor_Homepage from './Instructor_Homepage'
 import Student_Homepage from './Student_Homepage'
 import Instructor from './Instructor'
+import EnrollStudent from './EnrollStudent'
+import AddCourse from './AddCourse'
+import NavAdmin from './NavAdmin'
 export default class App extends React.Component {
   render() {
     return (
@@ -30,7 +33,7 @@ export default class App extends React.Component {
         {/* <FacultyList/> */}
         {/* <Instructor_Homepage/> */}
         {/* <Student_Homepage /> */}
-        <Instructor />
+        {/* <Instructor /> */}
         {/* <AdminRegister /> */}
         {/* <InstructorExam/> */}
         {/* {<InstructorGradePage/>} */}
@@ -41,6 +44,9 @@ export default class App extends React.Component {
         {/* <AdminProfile/>  */}
         {/* <InstructorProfile/>  */}
         {/* <StudentProfile/>   */}
+        {/* <EnrollStudent/> */}
+        {/* <AddCourse/> */}
+        <NavAdmin />
       </View>
     );
   }
