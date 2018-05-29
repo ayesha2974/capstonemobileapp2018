@@ -27,17 +27,29 @@ export default class NavAdmin extends React.Component {
                         </View>
                     </View>
                     <Text style={styles.line}> </Text>
+                    <TouchableOpacity>
+                    <View>
                     <Text style={styles.text2}>
                         Faculty List
                     </Text>
+                    </View>
+                    </TouchableOpacity>
                     <Text style={styles.line1}> </Text>
+                    <TouchableOpacity>
+                    <View>
                     <Text style={styles.text2}>
                         Add Courses
                     </Text>
+                    </View>
+                    </TouchableOpacity> 
                     <Text style={styles.line1}> </Text>
+                    <TouchableOpacity>
+                    <View>
                     <Text style={styles.text2}>
                         Enroll Students
                     </Text>
+                    </View>
+                    </TouchableOpacity> 
                     <Text style={styles.line1}> </Text>
                 </View>
  
