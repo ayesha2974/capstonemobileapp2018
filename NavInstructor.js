@@ -5,7 +5,7 @@ import { CheckBox, Item, Input, Icon } from 'native-base';
 import Bar from 'react-native-bar-collapsible';
 
 
-export default class NavStudent extends React.Component {
+export default class NavInstructor extends React.Component {
 
     state = { checked: true }
     render() {
@@ -13,11 +13,13 @@ export default class NavStudent extends React.Component {
         return (
             <View style={styles.container}>
                 <View style={styles.navbar}>
-
+ 
                     <View style={{ flexDirection: 'row' }}>
-                        <View>
-                            <Image style={styles.image} source={require('./panda.jpeg')} />
-                        </View>
+                    <TouchableOpacity>
+                    <View>
+                       <Image style={styles.image} source={require('./panda.jpeg')} />
+                   </View>
+               </TouchableOpacity>
                         <View style={{ marginTop: 25 }}>
                             <Text style={styles.text}>Instructor Name</Text>
                             <Text style={styles.text}>60087125</Text>
