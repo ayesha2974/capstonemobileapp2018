@@ -11,6 +11,7 @@ import FacultyList from './FacultyList'
 import AdminProfile from './AdminProfile'
 import InstructorGradePage from './InstructorGradePage'
 import InstructorExam from './InstructorExam'
+import Instructor from './Instructor'
 // import StudentExam from './StudentExam'
 import InstructorProfile from './InstructorProfile'
 import StudentProfile from './StudentProfile'
@@ -24,19 +25,20 @@ export default class App extends React.Component {
         {/* <Reset/>  */}
         {/* <EnterPass /> */}
         {/* <NavInstructor /> */}
-        {<NavStudent />}
+        {/* {<NavStudent />} */}
         {/* <Chat /> */}
         {/* <FacultyList/> */}
         {/* <AdminRegister /> */}
         {/* <InstructorExam/> */}
         {/* {<InstructorGradePage/>} */}
         {/* <StudentExam /> */}
-         {/* <Test /> */}
-         {/* <Test2 />  */}
-         {/* <Test3 /> */}
-       {/* <AdminProfile/>  */}
+        {/* <Instructor /> */}
+        {/* <Test /> */}
+        {/* <Test2 />  */}
+        {/* <Test3 /> */}
+       <AdminProfile/> 
          {/* <InstructorProfile/>  */}
-         <StudentProfile/>  
+         {/* <StudentProfile/>   */}
       </View>
     );
   }
