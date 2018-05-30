@@ -3,6 +3,8 @@ import React from 'react';
 import { Constants } from 'expo';
 import { CheckBox, Item, Input, Icon } from 'native-base';
 import Bar from 'react-native-bar-collapsible';
+
+
 export default class NavStudent extends React.Component {
     state = { checked: true }
     render() {

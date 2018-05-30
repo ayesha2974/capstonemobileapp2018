@@ -5,7 +5,7 @@ import { CheckBox, Item, Input, Icon } from 'native-base';
 import Bar from 'react-native-bar-collapsible';
 
 
-export default class NavStudent extends React.Component {
+export default class NavInstructor extends React.Component {
 
     state = { checked: true }
     render() {

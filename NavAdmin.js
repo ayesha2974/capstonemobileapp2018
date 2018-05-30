@@ -61,7 +61,11 @@ const styles = StyleSheet.create({
     container: {
         width: '100%',
         height: '100%',
+<<<<<<< HEAD
         // paddingTop: Constants.statusBarHeight,
+=======
+        paddingTop: Constants.statusBarHeight,
+>>>>>>> 4371d450d62baad2ae4e240b0af72e7e2002b202
         backgroundColor: 'white'
     },
     navbar: {

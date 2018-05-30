@@ -19,11 +19,13 @@ export default class Instructor_Homepage extends React.Component {
             widthArr1: [96, 96, 96, 96, 96, 96, 96, 96],
 
             tableData: [
-                ['CP1880-1', 'Assignment One', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Quiz one', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP1880-1', 'Quiz one', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
+                ['CP1880-2', 'Assignment One', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
+                ['CP3450-1', 'Quiz one', 'CIS', 'Sep 05', '-', 'Dec 11', '5', '1'],
+                ['CP1880-1', 'Quiz one', 'CIS', 'Oct 05', '-', 'Oct 09', '5', '1'],
+                ['CP2870-2', 'Lab One', 'CIS', 'Nov 05', '-', 'Dec 17', '5', '1'],
+                ['CP1880-2', 'Quiz Two', 'CIS', 'Sep 05', '-', 'Dec 06', '5', '1'],
+              
                 ['CP3450-1', 'Quiz one', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP3450-1', 'Quiz one', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
                 ['CP3450-1', 'Assignment One', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
                 ['CP3450-1', 'Assignment One', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
                 ['CP3450-1', 'Assignment One', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
@@ -40,7 +42,6 @@ export default class Instructor_Homepage extends React.Component {
                 ['CP1880-1', 'Lab One', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
                 ['CP1880-1', 'Lab One', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
                 ['CP1880-1', 'Lab One', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
-                ['CP2870-2', 'Lab One', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
                 ['CP2870-2', 'Lab One', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
                 ['CP2870-2', 'Lab One', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
                 ['CP2870-2', 'Lab One', 'CIS', 'Sep 05', '-', 'Dec 07', '5', '1'],
