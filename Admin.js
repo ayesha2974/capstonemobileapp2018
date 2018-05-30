@@ -45,6 +45,73 @@ export default class Admin extends React.Component {
             //     </View>
             // </View>
 
+            // <View>
+            //     <View style={styles.container} >
+            //         <View>
+            //             <NavAdmin />
+            //         </View>
+            //         <View>
+            //             <EnrollStudent />
+            //         </View>
+            //         <View>
+            //             <Chat />
+            //         </View>
+
+            //     </View>
+            // </View>// <View>
+            //     <View style={styles.container} >
+            //         <View>
+            //             <NavAdmin />
+            //         </View>
+            //         <View>
+            //             <EnrollStudent />
+            //         </View>
+            //         <View>
+            //             <Chat />
+            //         </View>
+
+            //     </View>
+            // </View>// <View>
+            //     <View style={styles.container} >
+            //         <View>
+            //             <NavAdmin />
+            //         </View>
+            //         <View>
+            //             <EnrollStudent />
+            //         </View>
+            //         <View>
+            //             <Chat />
+            //         </View>
+
+            //     </View>
+            // </View>// <View>
+            //     <View style={styles.container} >
+            //         <View>
+            //             <NavAdmin />
+            //         </View>
+            //         <View>
+            //             <EnrollStudent />
+            //         </View>
+            //         <View>
+            //             <Chat />
+            //         </View>
+
+            //     </View>
+            // </View>// <View>
+            //     <View style={styles.container} >
+            //         <View>
+            //             <NavAdmin />
+            //         </View>
+            //         <View>
+            //             <EnrollStudent />
+            //         </View>
+            //         <View>
+            //             <Chat />
+            //         </View>
+
+            //     </View>
+            // </View>
+
 
         );
     }
