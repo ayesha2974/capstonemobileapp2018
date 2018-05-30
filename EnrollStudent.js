@@ -110,11 +110,12 @@ export default class EnrollStudent extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: 'white',
+        backgroundColor: 'pink',
         width: "100%",
         height: "100%",
         alignItems: 'center',
-        justifyContent: 'center',
+        
+        // justifyContent: 'center',
 
     },
 
@@ -126,7 +127,8 @@ const styles = StyleSheet.create({
     },
     main: {
         flexDirection: 'row',
-        marginLeft: 80
+        marginLeft: 80,
+       
     },
 
     main1: {

@@ -5,25 +5,28 @@ import Reset from './Reset'
 import EnterPass from './EnterPass'
 import NavInstructor from './NavInstructor'
 import NavStudent from './NavStudent'
-// import Chat from './Chat'
+import Chat from './Chat'
 import AdminRegister from './AdminRegister'
 import FacultyList from './FacultyList'
 import AdminProfile from './AdminProfile'
 import InstructorGradePage from './InstructorGradePage'
 import InstructorExam from './InstructorExam'
+import Instructor from './Instructor'
 // import StudentExam from './StudentExam'
 import InstructorProfile from './InstructorProfile'
 import StudentProfile from './StudentProfile'
 import Instructor_Homepage from './Instructor_Homepage'
 import Student_Homepage from './Student_Homepage'
-import Instructor from './Instructor'
 import EnrollStudent from './EnrollStudent'
 import AddCourse from './AddCourse'
 import NavAdmin from './NavAdmin'
+import Admin from './Admin'
+
+
 export default class App extends React.Component {
   render() {
     return (
-      <View>
+      <View> 
         {/* <Login />  */}
         {/* <Reset/>  */}
         {/* <EnterPass /> */}
@@ -31,13 +34,14 @@ export default class App extends React.Component {
         {/* {<NavStudent />} */}
         {/* <Chat /> */}
         {/* <FacultyList/> */}
-        {/* <Instructor_Homepage/> */}
+        {<Instructor_Homepage/>}
         {/* <Student_Homepage /> */}
         {/* <Instructor /> */}
         {/* <AdminRegister /> */}
         {/* <InstructorExam/> */}
         {/* {<InstructorGradePage/>} */}
         {/* <StudentExam /> */}
+        {/* <Instructor /> */}
         {/* <Test /> */}
         {/* <Test2 />  */}
         {/* <Test3 /> */}
@@ -45,8 +49,9 @@ export default class App extends React.Component {
         {/* <InstructorProfile/>  */}
         {/* <StudentProfile/>   */}
         {/* <EnrollStudent/> */}
+        <Admin/>
         {/* <AddCourse/> */}
-        <NavAdmin />
+        {/* <NavAdmin /> */}
       </View>
     );
   }

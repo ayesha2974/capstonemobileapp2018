@@ -113,7 +113,7 @@ export default class Chat extends React.Component {
                                 title='Group Chat'
                                 titleStyle={{ fontSize: 24 }}
                                 collapsible={true}
-                                showOnStart={true}
+                                showOnStart={false}
                                 iconCollapsed='chevron-right'
                                 iconOpened='chevron-down'
                                 tintColor='white'
@@ -224,17 +224,17 @@ export default class Chat extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-        width: '100%',
-        height: '100%',
-        paddingTop: Constants.statusBarHeight,
-        backgroundColor: 'white',
+        // width: '100%',
+        // height: '100%',
+        // paddingTop: Constants.statusBarHeight,
+        // backgroundColor: 'white',
     },
     chat: {
         backgroundColor: '#76323f',
         width: 400,
         height: '100%',
         flexDirection: 'column',
-        alignSelf: 'flex-end',
+        // alignSelf: 'flex-end',
         padding: 10
     },
     chatHead: {

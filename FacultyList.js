@@ -10,7 +10,6 @@ export default class FacultyList extends React.Component {
 
     render() {
         return (
-
             <View style={styles.container} >
                 <KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
                     <View style={styles.inline}>
@@ -81,7 +80,6 @@ export default class FacultyList extends React.Component {
                     </View>
                 </KeyboardAvoidingView>
             </View>
-
         );
     }
 }
@@ -139,24 +137,52 @@ const styles = StyleSheet.create({
         // padding: 3,
     },
 
-    head: { height: 40, backgroundColor: '#f1f8ff' },
-    text: { margin: 6, color: 'black' },
+    head: {
+        height: 40,
+        backgroundColor: '#f1f8ff'
+    },
+    text: {
+        margin: 6,
+        color: 'black'
+    },
 
     titles: {
-        marginTop: 10, fontSize: 18, fontWeight: 'bold', marginLeft: 7, height: 40
+        marginTop: 10,
+        fontSize: 18,
+        fontWeight: 'bold',
+        marginLeft: 7,
+        height: 40
     },
     tabletitles: {
-        marginTop: 10, fontSize: 16, fontWeight: 'bold', marginLeft: 28, height: 40, color: 'white'
+        marginTop: 10,
+        fontSize: 16,
+        fontWeight: 'bold',
+        marginLeft: 28,
+        height: 40,
+        color: 'white'
     },
     tableContent: {
-        marginTop: 10, fontSize: 15, marginLeft: 25, height: 40, color: 'black'
+        marginTop: 10,
+        fontSize: 15,
+        marginLeft: 25,
+        height: 40,
+        color: 'black'
     },
     dropdowns: {
-        borderColor: 'black', backgroundColor: 'white', height: 40, width: 150, marginLeft: 5, paddingLeft: 10
+        borderColor: 'black',
+        backgroundColor: 'white',
+        height: 40,
+        width: 150,
+        marginLeft: 5,
+        paddingLeft: 10
     }
     ,
     tablebody: {
-        height: 50, width: 300, marginLeft: 60,
-        marginRight: 530, marginTop: 10, flexDirection: 'row'
+        height: 50,
+        width: 300,
+        marginLeft: 60,
+        marginRight: 530,
+        marginTop: 10,
+        flexDirection: 'row'
     },
 });

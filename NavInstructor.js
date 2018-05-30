@@ -13,7 +13,7 @@ export default class NavStudent extends React.Component {
         return (
             <View style={styles.container}>
                 <View style={styles.navbar}>
-
+ 
                     <View style={{ flexDirection: 'row' }}>
                     <TouchableOpacity>
                     <View>
