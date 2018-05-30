@@ -154,34 +154,25 @@ export default class Instructor extends React.Component {
     render() {
 
         return (
+            <ScrollView>
+            {/* <ScrollView horizontal={true}> */}
             <View style={styles.container}>
-                {
-                    // this.state.screen >= 500
-                    this.state.expandLeft//&&window.innerWidth>=305// collapsses when width is small
-                        ?
-                        <NavInstructor />
-                        :
-                        <View></View>
-                }
-                <View class={this.state.changeClass}>
-                    <View class={this.state.leftButton} uk-icon={this.state.iconLeft} onClick={() => this.handleExpandLeft()}>
-                    </View>
+                {/* <View>
+                    <NavInstructor />
+                </View> */}
+
+
+                <View style={{ width: 350 }}>
                     <Instructor_HomePage />
-                    <View class={this.state.rightButton}
-                        uk-icon={this.state.iconRight}
-                        onClick={() => this.handleExpandRight()}>
-                    </View>
+
                 </View>
-                {
-                    this.state.expandRight
-                        ?
-                        <Chat />
-                        :
-                        <View></View>
-                }
+                <View>
+                    <Chat />
+                </View>
             </View>
 
-
+            </ScrollView>
+            // </ScrollView>
         );
     }
 }
@@ -190,10 +181,10 @@ export default class Instructor extends React.Component {
 const styles = StyleSheet.create({
     container: {
         backgroundColor: 'white',
-        width: "100%",
-        height: "100%",
-        alignItems: 'center',
-        justifyContent: 'center',
+
+        // alignItems: 'center',
+        // justifyContent: 'center',
+        flexDirection: 'row'
     },
     container1: {
         backgroundColor: 'white',
